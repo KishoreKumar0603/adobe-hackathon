@@ -1,0 +1,15 @@
+{
+  "title": "Sample Document for PDF Extraction",
+  "outline": [
+    {
+      "level": "H3",
+      "text": "Introduction to AI",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "Deep Learning",
+      "page": 1
+    }
+  ]
+}

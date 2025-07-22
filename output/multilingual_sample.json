@@ -1,0 +1,15 @@
+{
+  "title": "Multilingual Sample PDF",
+  "outline": [
+    {
+      "level": "H2",
+      "text": "Introduction to Artificial Intelligence",
+      "page": 1
+    },
+    {
+      "level": "H2",
+      "text": "Deep Learning Overview",
+      "page": 1
+    }
+  ]
+}
