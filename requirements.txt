@@ -1,2 +1,4 @@
-pymupdf
-none
+numpy==1.23.5
+PyMuPDF==1.23.6
+spacy==3.6.1
+tqdm==4.66.1
