@@ -1,0 +1,13 @@
+{
+  "total_entries": 1209,
+  "label_distribution": {
+    "H3": 163,
+    "H2": 12,
+    "non-heading": 1019,
+    "H1": 15
+  },
+  "average_confidence": 0.7428502702854932,
+  "low_confidence_count": 672,
+  "low_confidence_percentage": 55.58312655086849,
+  "duplicate_count": 75
+}

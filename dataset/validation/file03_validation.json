@@ -1,0 +1,2994 @@
+{
+  "label_counts": {
+    "H1": 11,
+    "H2": 3,
+    "H3": 84,
+    "non-heading": 503
+  },
+  "total_entries": 601,
+  "low_confidence_count": 426,
+  "low_confidence_entries": [
+    {
+      "text": "Ontario’s Libraries",
+      "label": "H3",
+      "confidence": 0.5940959409594097,
+      "page": 1,
+      "y": 72.08401489257812
+    },
+    {
+      "text": "Working Together",
+      "label": "H3",
+      "confidence": 0.5940959409594097,
+      "page": 1,
+      "y": 94.63546752929688
+    },
+    {
+      "text": "A Critical Component for Implementing Ontario’s Road Map to",
+      "label": "H3",
+      "confidence": 0.5940959409594097,
+      "page": 2,
+      "y": 120.31608581542969
+    },
+    {
+      "text": "Prosperity Strategy",
+      "label": "H3",
+      "confidence": 0.5940959409594097,
+      "page": 2,
+      "y": 138.6700897216797
+    },
+    {
+      "text": "Funding Source",
+      "label": "H3",
+      "confidence": 0.5814838300570704,
+      "page": 10,
+      "y": 344.1000061035156
+    },
+    {
+      "text": "Request for Proposal",
+      "label": "H3",
+      "confidence": 0.5620437956204379,
+      "page": 2,
+      "y": 228.5688018798828
+    },
+    {
+      "text": "RFP",
+      "label": "H3",
+      "confidence": 0.5620437956204379,
+      "page": 2,
+      "y": 228.5688018798828
+    },
+    {
+      "text": "April 11",
+      "label": "H3",
+      "confidence": 0.5620437956204379,
+      "page": 2,
+      "y": 517.6070556640625
+    },
+    {
+      "text": "Noon on Monday,",
+      "label": "H3",
+      "confidence": 0.5620437956204379,
+      "page": 2,
+      "y": 567.5687866210938
+    },
+    {
+      "text": "RFP: To Develop the Ontario Digital Library Business Plan",
+      "label": "H3",
+      "confidence": 0.5620437956204379,
+      "page": 2,
+      "y": 734.0382080078125
+    },
+    {
+      "text": "March 2003",
+      "label": "H3",
+      "confidence": 0.5620437956204379,
+      "page": 2,
+      "y": 734.0382080078125
+    },
+    {
+      "text": "RFP: To Develop the Ontario Digital Library Business Plan",
+      "label": "H3",
+      "confidence": 0.5620437956204379,
+      "page": 3,
+      "y": 734.0382080078125
+    },
+    {
+      "text": "March 2003",
+      "label": "H3",
+      "confidence": 0.5620437956204379,
+      "page": 3,
+      "y": 734.0382080078125
+    },
+    {
+      "text": "RFP: To Develop the Ontario Digital Library Business Plan",
+      "label": "H3",
+      "confidence": 0.5620437956204379,
+      "page": 4,
+      "y": 734.0382080078125
+    },
+    {
+      "text": "March 2003",
+      "label": "H3",
+      "confidence": 0.5620437956204379,
+      "page": 4,
+      "y": 734.0382080078125
+    },
+    {
+      "text": "RFP: To Develop the Ontario Digital Library Business Plan",
+      "label": "H3",
+      "confidence": 0.5620437956204379,
+      "page": 5,
+      "y": 734.0382080078125
+    },
+    {
+      "text": "March 2003",
+      "label": "H3",
+      "confidence": 0.5620437956204379,
+      "page": 5,
+      "y": 734.0382080078125
+    },
+    {
+      "text": "RFP: To Develop the Ontario Digital Library Business Plan",
+      "label": "H3",
+      "confidence": 0.5620437956204379,
+      "page": 6,
+      "y": 734.0382080078125
+    },
+    {
+      "text": "March 2003",
+      "label": "H3",
+      "confidence": 0.5620437956204379,
+      "page": 6,
+      "y": 734.0382080078125
+    },
+    {
+      "text": "RFP: To Develop the Ontario Digital Library Business Plan",
+      "label": "H3",
+      "confidence": 0.5620437956204379,
+      "page": 7,
+      "y": 734.0382080078125
+    },
+    {
+      "text": "March 2003",
+      "label": "H3",
+      "confidence": 0.5620437956204379,
+      "page": 7,
+      "y": 734.0382080078125
+    },
+    {
+      "text": "RFP: To Develop the Ontario Digital Library Business Plan",
+      "label": "H3",
+      "confidence": 0.5620437956204379,
+      "page": 8,
+      "y": 734.0382080078125
+    },
+    {
+      "text": "March 2003",
+      "label": "H3",
+      "confidence": 0.5620437956204379,
+      "page": 8,
+      "y": 734.0382080078125
+    },
+    {
+      "text": "Phase I:  Business Planning",
+      "label": "H3",
+      "confidence": 0.5620437956204379,
+      "page": 9,
+      "y": 139.785888671875
+    },
+    {
+      "text": "Phase II: Implementing and Transitioning",
+      "label": "H3",
+      "confidence": 0.5620437956204379,
+      "page": 9,
+      "y": 335.28082275390625
+    },
+    {
+      "text": "Phase III: Operating and Growing the ODL",
+      "label": "H3",
+      "confidence": 0.5620437956204379,
+      "page": 9,
+      "y": 611.3221435546875
+    },
+    {
+      "text": "RFP: To Develop the Ontario Digital Library Business Plan",
+      "label": "H3",
+      "confidence": 0.5620437956204379,
+      "page": 9,
+      "y": 734.0382080078125
+    },
+    {
+      "text": "March 2003",
+      "label": "H3",
+      "confidence": 0.5620437956204379,
+      "page": 9,
+      "y": 734.0382080078125
+    },
+    {
+      "text": "OVERVIEW OF ODL FUNDING MODEL",
+      "label": "H3",
+      "confidence": 0.5620437956204379,
+      "page": 10,
+      "y": 320.6685485839844
+    },
+    {
+      "text": "TOTAL ANNUAL",
+      "label": "H3",
+      "confidence": 0.5620437956204379,
+      "page": 10,
+      "y": 406.31390380859375
+    },
+    {
+      "text": "RFP: To Develop the Ontario Digital Library Business Plan",
+      "label": "H3",
+      "confidence": 0.5620437956204379,
+      "page": 10,
+      "y": 734.0382080078125
+    },
+    {
+      "text": "March 2003",
+      "label": "H3",
+      "confidence": 0.5620437956204379,
+      "page": 10,
+      "y": 734.0382080078125
+    },
+    {
+      "text": "1. Preamble",
+      "label": "H3",
+      "confidence": 0.5620437956204379,
+      "page": 11,
+      "y": 136.785888671875
+    },
+    {
+      "text": "2. Terms of Reference",
+      "label": "H3",
+      "confidence": 0.5620437956204379,
+      "page": 11,
+      "y": 217.3125
+    },
+    {
+      "text": "RFP: To Develop the Ontario Digital Library Business Plan",
+      "label": "H3",
+      "confidence": 0.5620437956204379,
+      "page": 11,
+      "y": 734.0382080078125
+    },
+    {
+      "text": "March 2003",
+      "label": "H3",
+      "confidence": 0.5620437956204379,
+      "page": 11,
+      "y": 734.0382080078125
+    },
+    {
+      "text": "8. Lines of Accountability and Communication",
+      "label": "H3",
+      "confidence": 0.5620437956204379,
+      "page": 12,
+      "y": 603.3471069335938
+    },
+    {
+      "text": "RFP: To Develop the Ontario Digital Library Business Plan",
+      "label": "H3",
+      "confidence": 0.5620437956204379,
+      "page": 12,
+      "y": 734.0382080078125
+    },
+    {
+      "text": "March 2003",
+      "label": "H3",
+      "confidence": 0.5620437956204379,
+      "page": 12,
+      "y": 734.0382080078125
+    },
+    {
+      "text": "RFP: To Develop the Ontario Digital Library Business Plan",
+      "label": "H3",
+      "confidence": 0.5620437956204379,
+      "page": 13,
+      "y": 734.0382080078125
+    },
+    {
+      "text": "March 2003",
+      "label": "H3",
+      "confidence": 0.5620437956204379,
+      "page": 13,
+      "y": 734.0382080078125
+    },
+    {
+      "text": "RFP: To Develop the Ontario Digital Library Business Plan",
+      "label": "H3",
+      "confidence": 0.5620437956204379,
+      "page": 14,
+      "y": 734.0382080078125
+    },
+    {
+      "text": "March 2003",
+      "label": "H3",
+      "confidence": 0.5620437956204379,
+      "page": 14,
+      "y": 734.0382080078125
+    },
+    {
+      "text": "Ontario Digital Library (ODL).",
+      "label": "H3",
+      "confidence": 0.5384615384615385,
+      "page": 2,
+      "y": 241.16542053222656
+    },
+    {
+      "text": "Shared funding:",
+      "label": "H3",
+      "confidence": 0.5384615384615385,
+      "page": 4,
+      "y": 621.4044799804688
+    },
+    {
+      "text": "Access:",
+      "label": "H3",
+      "confidence": 0.5384615384615385,
+      "page": 5,
+      "y": 173.2799835205078
+    },
+    {
+      "text": "Guidance and Advice:",
+      "label": "H3",
+      "confidence": 0.5384615384615385,
+      "page": 5,
+      "y": 249.23524475097656
+    },
+    {
+      "text": "Training:",
+      "label": "H3",
+      "confidence": 0.5384615384615385,
+      "page": 5,
+      "y": 299.74322509765625
+    },
+    {
+      "text": "Provincial Purchasing & Licensing:",
+      "label": "H3",
+      "confidence": 0.5384615384615385,
+      "page": 5,
+      "y": 350.3836975097656
+    },
+    {
+      "text": "Technological Support:",
+      "label": "H3",
+      "confidence": 0.5384615384615385,
+      "page": 5,
+      "y": 388.30609130859375
+    },
+    {
+      "text": "Funding Requested:",
+      "label": "H3",
+      "confidence": 0.5384615384615385,
+      "page": 9,
+      "y": 174.34710693359375
+    },
+    {
+      "text": "Funding Requested:",
+      "label": "H3",
+      "confidence": 0.5384615384615385,
+      "page": 9,
+      "y": 369.84197998046875
+    },
+    {
+      "text": "Timeline:",
+      "label": "H3",
+      "confidence": 0.5384615384615385,
+      "page": 9,
+      "y": 634.359619140625
+    },
+    {
+      "text": "Funding:",
+      "label": "H3",
+      "confidence": 0.5384615384615385,
+      "page": 9,
+      "y": 645.8833618164062
+    },
+    {
+      "text": "Result:",
+      "label": "H3",
+      "confidence": 0.5384615384615385,
+      "page": 9,
+      "y": 668.8013916015625
+    },
+    {
+      "text": "2007",
+      "label": "H3",
+      "confidence": 0.5361911454673226,
+      "page": 10,
+      "y": 344.1000061035156
+    },
+    {
+      "text": "2017",
+      "label": "H3",
+      "confidence": 0.5361911454673226,
+      "page": 10,
+      "y": 344.1000061035156
+    },
+    {
+      "text": "April 28, 2003",
+      "label": "H3",
+      "confidence": 0.5121951219512195,
+      "page": 2,
+      "y": 617.4805908203125
+    },
+    {
+      "text": "May 5, 2003",
+      "label": "H3",
+      "confidence": 0.5121951219512195,
+      "page": 2,
+      "y": 667.3924560546875
+    },
+    {
+      "text": "only",
+      "label": "H3",
+      "confidence": 0.5121951219512195,
+      "page": 3,
+      "y": 122.12062072753906
+    },
+    {
+      "text": "3:00 p.m. on Friday April 18th",
+      "label": "H3",
+      "confidence": 0.5121951219512195,
+      "page": 3,
+      "y": 122.12062072753906
+    },
+    {
+      "text": "The proposed ODL expenditures in 2006",
+      "label": "H3",
+      "confidence": 0.5121951219512195,
+      "page": 10,
+      "y": 533.532958984375
+    },
+    {
+      "text": "This multiplier means that for every dollar invested in ODL the return",
+      "label": "H3",
+      "confidence": 0.5121951219512195,
+      "page": 10,
+      "y": 602.5457763671875
+    },
+    {
+      "text": "Summary",
+      "label": "H3",
+      "confidence": 0.5096582466567607,
+      "page": 2,
+      "y": 195.71998596191406
+    },
+    {
+      "text": "Background",
+      "label": "H3",
+      "confidence": 0.5096582466567607,
+      "page": 3,
+      "y": 206.1599884033203
+    },
+    {
+      "text": "The Business Plan to be Developed",
+      "label": "H3",
+      "confidence": 0.5096582466567607,
+      "page": 6,
+      "y": 459.1199951171875
+    },
+    {
+      "text": "Milestones",
+      "label": "H3",
+      "confidence": 0.5096582466567607,
+      "page": 7,
+      "y": 270.1199951171875
+    },
+    {
+      "text": "Approach and Specific Proposal Requirements",
+      "label": "H3",
+      "confidence": 0.5096582466567607,
+      "page": 7,
+      "y": 423.5999755859375
+    },
+    {
+      "text": "Evaluation and Awarding of Contract",
+      "label": "H3",
+      "confidence": 0.5096582466567607,
+      "page": 8,
+      "y": 81.00001525878906
+    },
+    {
+      "text": "Appendix A:  ODL Envisioned Phases & Funding",
+      "label": "H3",
+      "confidence": 0.5096582466567607,
+      "page": 9,
+      "y": 107.51997375488281
+    },
+    {
+      "text": "ODL Steering Committee Terms of Reference",
+      "label": "H3",
+      "confidence": 0.5096582466567607,
+      "page": 11,
+      "y": 92.51997375488281
+    },
+    {
+      "text": "ODL’s Envisioned Electronic Resources",
+      "label": "H3",
+      "confidence": 0.5096582466567607,
+      "page": 14,
+      "y": 92.51997375488281
+    },
+    {
+      "text": "100 Lombard",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 2,
+      "y": 555.826171875
+    },
+    {
+      "text": "April 21, 2003.",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 2,
+      "y": 580.1654052734375
+    },
+    {
+      "text": "Ridley by April 11",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 3,
+      "y": 160.0319366455078
+    },
+    {
+      "text": "The Roadmap to Prosperity",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 3,
+      "y": 490.0017395019531
+    },
+    {
+      "text": "Equitable access for all Ontarians:",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 4,
+      "y": 349.03662109375
+    },
+    {
+      "text": "Ontario citizens",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 4,
+      "y": 386.3518371582031
+    },
+    {
+      "text": "Shared decision-making and accountability:",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 4,
+      "y": 448.2641296386719
+    },
+    {
+      "text": "Shared governance structure:",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 4,
+      "y": 547.4916381835938
+    },
+    {
+      "text": "Local points of entry:",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 5,
+      "y": 72.10939025878906
+    },
+    {
+      "text": "For each Ontario citizen it could mean:",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 5,
+      "y": 493.7712097167969
+    },
+    {
+      "text": "For each Ontario student it could mean:",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 5,
+      "y": 632.223876953125
+    },
+    {
+      "text": "For each Ontario library it could mean:",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 6,
+      "y": 110.00978088378906
+    },
+    {
+      "text": "For the Ontario government it could mean:",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 6,
+      "y": 223.87635803222656
+    },
+    {
+      "text": "2007. The planning process must also secure the full commitment of all stakeholders, as",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 6,
+      "y": 541.5200805664062
+    },
+    {
+      "text": "The firm/consultant",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 7,
+      "y": 456.56878662109375
+    },
+    {
+      "text": "Demonstrated experience",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 8,
+      "y": 222.9153594970703
+    },
+    {
+      "text": "The ODL business plan",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 9,
+      "y": 197.26507568359375
+    },
+    {
+      "text": "1. that ODL expenditures will increase by 50% over a 10 year period",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 10,
+      "y": 245.30120849609375
+    },
+    {
+      "text": "2. that government funding will decrease from 70% to 45% during that 10 year period",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 10,
+      "y": 262.70135498046875
+    },
+    {
+      "text": "3. that library contributions, endowment and gifts/in-kind funding will increase from 30% to 55%",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 10,
+      "y": 280.22100830078125
+    },
+    {
+      "text": "Government",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 10,
+      "y": 358.42620849609375
+    },
+    {
+      "text": "$35M (70%)",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 10,
+      "y": 358.42620849609375
+    },
+    {
+      "text": "$33.75M (45%)",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 10,
+      "y": 358.42620849609375
+    },
+    {
+      "text": "Libraries",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 10,
+      "y": 370.4280090332031
+    },
+    {
+      "text": "$10M (20%)",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 10,
+      "y": 370.4280090332031
+    },
+    {
+      "text": "$22.5M (30%)",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 10,
+      "y": 370.4280090332031
+    },
+    {
+      "text": "Endowment",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 10,
+      "y": 382.4298095703125
+    },
+    {
+      "text": "$4.5M (9%)",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 10,
+      "y": 382.4298095703125
+    },
+    {
+      "text": "$15M (20%)",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 10,
+      "y": 382.4298095703125
+    },
+    {
+      "text": "Gifts/In-Kind",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 10,
+      "y": 394.4316101074219
+    },
+    {
+      "text": "$0.5M (1%)",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 10,
+      "y": 394.4316101074219
+    },
+    {
+      "text": "$3.75M (5%)",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 10,
+      "y": 394.4316101074219
+    },
+    {
+      "text": "$50M",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 10,
+      "y": 406.43341064453125
+    },
+    {
+      "text": "$75M",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 10,
+      "y": 406.43341064453125
+    },
+    {
+      "text": "represent an investment of $5.00 per citizen.",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 10,
+      "y": 545.056640625
+    },
+    {
+      "text": "on investment is worth $2 of value for Ontario.",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 10,
+      "y": 614.0694580078125
+    },
+    {
+      "text": "2.3 recruiting and managing the business planner(s);",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 11,
+      "y": 355.45770263671875
+    },
+    {
+      "text": "2.4 defining terms of reference and resource parameters for business planner(s), and authorizing",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 11,
+      "y": 366.8619079589844
+    },
+    {
+      "text": "2.5 serving as a focus group for business planner(s) to test ideas;",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 11,
+      "y": 389.9093322753906
+    },
+    {
+      "text": "2.6 providing signoff for business planner(s) at key decision points of business plan development;",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 11,
+      "y": 401.43304443359375
+    },
+    {
+      "text": "2.7 securing commitment from library, government, and institutional stakeholders for implementation",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 11,
+      "y": 412.9567565917969
+    },
+    {
+      "text": "2.8 presenting the business plan to funders",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 11,
+      "y": 435.8846740722656
+    },
+    {
+      "text": "2.9 undertaking advocacy efforts to promote the ODL to the broader communities including library",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 11,
+      "y": 447.40838623046875
+    },
+    {
+      "text": "Urban Public Libraries of Ontario (ARUPLO), Administrators of Small Public Libraries of",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 11,
+      "y": 654.4468994140625
+    },
+    {
+      "text": "Ontario (ASPLO) and Chief Executives of Large-sized Public Libraries of Ontario (CELPLO)",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 11,
+      "y": 665.9705810546875
+    },
+    {
+      "text": "Executives of AMPLO, ARUPLO, ASPLO and CELPLO to name",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 11,
+      "y": 677.374755859375
+    },
+    {
+      "text": "3.5 Ontario Library Association representative (ex-officio)  (",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 12,
+      "y": 72.13579559326172
+    },
+    {
+      "text": "3.6 It is anticipated that as planning for the ODL evolves, the Steering Committee may, at its",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 12,
+      "y": 129.7445068359375
+    },
+    {
+      "text": "4.1",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 12,
+      "y": 187.83123779296875
+    },
+    {
+      "text": "4.2",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 12,
+      "y": 223.83660888671875
+    },
+    {
+      "text": "Strategic thinkers;",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 12,
+      "y": 247.959716796875
+    },
+    {
+      "text": "8.1 The Steering Committee is accountable to the Province of Ontario, and to its business plan",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 12,
+      "y": 626.504150390625
+    },
+    {
+      "text": "8.3 The Steering Committee is accountable to its constituent groups and other stakeholders for",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 13,
+      "y": 83.76982879638672
+    },
+    {
+      "text": "9.1 Service on the Steering Committee is non-remunerative",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 13,
+      "y": 164.29644775390625
+    },
+    {
+      "text": "9.2 Travel and meeting expenses for Steering Committee members are reimbursed according to the",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 13,
+      "y": 175.70062255859375
+    },
+    {
+      "text": "1. Reference Resources",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 14,
+      "y": 205.91876220703125
+    },
+    {
+      "text": "2. Subject Guides",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 14,
+      "y": 424.49090576171875
+    },
+    {
+      "text": "3. Educational tool-kits",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 14,
+      "y": 562.3970947265625
+    },
+    {
+      "text": "Appendix B:",
+      "label": "non-heading",
+      "confidence": 0.5200945626477542,
+      "page": 11,
+      "y": 92.51997375488281
+    },
+    {
+      "text": "Appendix C:",
+      "label": "non-heading",
+      "confidence": 0.5200945626477542,
+      "page": 14,
+      "y": 92.51997375488281
+    },
+    {
+      "text": "Timeline:",
+      "label": "non-heading",
+      "confidence": 0.5504587155963303,
+      "page": 2,
+      "y": 480.2918395996094
+    },
+    {
+      "text": "St., Suite 303, Toronto, ON  M5C 1M3.",
+      "label": "non-heading",
+      "confidence": 0.5504587155963303,
+      "page": 2,
+      "y": 568.5451049804688
+    },
+    {
+      "text": "TAL.",
+      "label": "non-heading",
+      "confidence": 0.5504587155963303,
+      "page": 4,
+      "y": 211.1691436767578
+    },
+    {
+      "text": "Committee.",
+      "label": "non-heading",
+      "confidence": 0.5504587155963303,
+      "page": 8,
+      "y": 337.2566223144531
+    },
+    {
+      "text": "3.1 Schools:",
+      "label": "non-heading",
+      "confidence": 0.5504587155963303,
+      "page": 11,
+      "y": 539.44873046875
+    },
+    {
+      "text": "3.2 Universities:",
+      "label": "non-heading",
+      "confidence": 0.5504587155963303,
+      "page": 11,
+      "y": 585.424072265625
+    },
+    {
+      "text": "3.3 Colleges:",
+      "label": "non-heading",
+      "confidence": 0.5504587155963303,
+      "page": 11,
+      "y": 608.4715576171875
+    },
+    {
+      "text": "3.4 Public libraries:",
+      "label": "non-heading",
+      "confidence": 0.5504587155963303,
+      "page": 11,
+      "y": 631.3994140625
+    },
+    {
+      "text": "Role of the Chair:",
+      "label": "non-heading",
+      "confidence": 0.5504587155963303,
+      "page": 12,
+      "y": 465.4609069824219
+    },
+    {
+      "text": "Community Services Cluster, ADM’s and Deputy Ministers.",
+      "label": "non-heading",
+      "confidence": 0.5504587155963303,
+      "page": 13,
+      "y": 118.22148895263672
+    },
+    {
+      "text": "9.3 Conflict of Interest:",
+      "label": "non-heading",
+      "confidence": 0.5504587155963303,
+      "page": 13,
+      "y": 198.74810791015625
+    },
+    {
+      "text": "4. Journals, books, maps, music etc.",
+      "label": "non-heading",
+      "confidence": 0.5504587155963303,
+      "page": 14,
+      "y": 654.4474487304688
+    },
+    {
+      "text": "all Ontario citizens have access to the knowledge and learning supports needed to be life-long",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 1,
+      "y": 708.1881713867188
+    },
+    {
+      "text": "The purpose of this",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 2,
+      "y": 228.5688018798828
+    },
+    {
+      "text": ") is to invite firms and/or consultants to",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 2,
+      "y": 228.5688018798828
+    },
+    {
+      "text": "present a proposal for developing the business plan for the",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 2,
+      "y": 241.16542053222656
+    },
+    {
+      "text": "The ODL will deliver high-quality library electronic content to all Ontario residents in order to",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 2,
+      "y": 253.8834991455078
+    },
+    {
+      "text": "assist people as they learn, work, and enhance their quality of life. The business plan to be",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 2,
+      "y": 266.6015625
+    },
+    {
+      "text": "how the ODL will be implemented, including the timeline",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 2,
+      "y": 303.9167785644531
+    },
+    {
+      "text": "the financial plan for the implementation",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 2,
+      "y": 316.513427734375
+    },
+    {
+      "text": "the financial plan for the first 2 operating years, including capital and operating costs,",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 2,
+      "y": 329.1100769042969
+    },
+    {
+      "text": "a financial forecast for the succeeding 2 operating years",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 2,
+      "y": 354.4248046875
+    },
+    {
+      "text": "the services and products to be delivered by the ODL",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 2,
+      "y": 367.14288330078125
+    },
+    {
+      "text": "how the ODL will operate and be managed following the implementation",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 2,
+      "y": 379.7395324707031
+    },
+    {
+      "text": "who will be involved, and what their role/responsibility will be, for both the",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 2,
+      "y": 392.336181640625
+    },
+    {
+      "text": "implementation and operational stages",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 2,
+      "y": 405.05426025390625
+    },
+    {
+      "text": "the marketing and communications plan for the ODL",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 2,
+      "y": 417.6509094238281
+    },
+    {
+      "text": "This business plan must be completed and approved by the ODL Steering Committee no",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 2,
+      "y": 442.97662353515625
+    },
+    {
+      "text": "later than September 30, 2003",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 2,
+      "y": 455.5732727050781
+    },
+    {
+      "text": "Those firms/consultants intended to submit a proposal to this RFP must indicate their",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 2,
+      "y": 504.888916015625
+    },
+    {
+      "text": "th",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 2,
+      "y": 516.3010864257812
+    },
+    {
+      "text": "intention to do so in an e-mail to Michael Ridley (",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 2,
+      "y": 517.6070556640625
+    },
+    {
+      "text": "mridley@uoguelph.ca",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 2,
+      "y": 517.6070556640625
+    },
+    {
+      "text": ") by",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 2,
+      "y": 517.6070556640625
+    },
+    {
+      "text": "Proposals may be e-mailed, mailed, couriered or faxed to: Larry Moore",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 2,
+      "y": 542.2459106445312
+    },
+    {
+      "text": "lmoore@accessola.com",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 2,
+      "y": 554.842529296875
+    },
+    {
+      "text": "), Executive Director, The Ontario Library Association,",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 2,
+      "y": 554.842529296875
+    },
+    {
+      "text": "Proposals must be received by",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 2,
+      "y": 567.5687866210938
+    },
+    {
+      "text": "Those proposals that are short-listed will be invited to discuss their proposal during the week",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 2,
+      "y": 604.8839721679688
+    },
+    {
+      "text": ". No presentation will be expected. Firms or consultants invited to an",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 2,
+      "y": 617.4805908203125
+    },
+    {
+      "text": "interview will be expected to discuss the project and their approach with the selection",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 2,
+      "y": 630.19873046875
+    },
+    {
+      "text": "committee",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 2,
+      "y": 642.7953491210938
+    },
+    {
+      "text": "Contracts with the firm/consultant will be signed the week of",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 2,
+      "y": 667.3924560546875
+    },
+    {
+      "text": "with the work to",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 2,
+      "y": 667.3924560546875
+    },
+    {
+      "text": "Please note that we reserve the right not to select any of the submitted proposals and may",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 3,
+      "y": 72.20881652832031
+    },
+    {
+      "text": "If you require further information or have any questions, please contact Michael Ridley by e-",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 3,
+      "y": 109.52400207519531
+    },
+    {
+      "text": "mail (",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 3,
+      "y": 122.12062072753906
+    },
+    {
+      "text": "mridley@uoguelph.ca",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 3,
+      "y": 122.12062072753906
+    },
+    {
+      "text": ". All questions and",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 3,
+      "y": 122.12062072753906
+    },
+    {
+      "text": "responses will be shared with those who have indicated that they will be submitting a",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 3,
+      "y": 134.8386993408203
+    },
+    {
+      "text": "proposal. Please note, that firms/consultants who have not indicated in an e-mail to Michael",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 3,
+      "y": 147.43531799316406
+    },
+    {
+      "text": "that they will be submitting a proposal will not receive any further",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 3,
+      "y": 160.0487823486328
+    },
+    {
+      "text": "First, some background on the ODL. For the last two years the Ontario Library Association",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 3,
+      "y": 239.12879943847656
+    },
+    {
+      "text": "has acted as a catalyst, bringing together the stakeholders needed to create the Ontario",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 3,
+      "y": 251.7254180908203
+    },
+    {
+      "text": "Digital Library (ODL). These stakeholders include Ontario’s 5000+ public libraries, university,",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 3,
+      "y": 264.322021484375
+    },
+    {
+      "text": "Libraries that serve very different clientele recognize that by working together they can create",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 3,
+      "y": 301.63720703125
+    },
+    {
+      "text": "seamless access to quality electronic library services. Through the ODL, students will be",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 3,
+      "y": 314.35528564453125
+    },
+    {
+      "text": "able to explore a topic at school, use the same child-safe resources after school (either at",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 3,
+      "y": 326.9519348144531
+    },
+    {
+      "text": "home or at a public library), enter college or university with a knowledge of how to use",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 3,
+      "y": 339.548583984375
+    },
+    {
+      "text": "electronic resources that are still available and then, after graduation, continue to use these",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 3,
+      "y": 352.26666259765625
+    },
+    {
+      "text": "We are moving into a period of convergence. With convergence we no longer have to license",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 3,
+      "y": 389.5818786621094
+    },
+    {
+      "text": "commercial products as individual libraries or institutions. We can work together to spend our",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 3,
+      "y": 402.17852783203125
+    },
+    {
+      "text": "money wisely. The provincial government has made this possible by working hard to provide",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 3,
+      "y": 414.7751770019531
+    },
+    {
+      "text": "all Ontarians with a stable, high-speed communications infrastructure. While there is still a",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 3,
+      "y": 427.4932556152344
+    },
+    {
+      "text": "great deal of work needed to improve this infrastructure, libraries are beginning to plan how",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 3,
+      "y": 440.08990478515625
+    },
+    {
+      "text": "best to exploit communications technology. We can reduce barriers to access and create the",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 3,
+      "y": 452.8079833984375
+    },
+    {
+      "text": "The concept of an ODL is a key element in",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 3,
+      "y": 490.0017395019531
+    },
+    {
+      "text": ", a strategic plan to",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 3,
+      "y": 490.0017395019531
+    },
+    {
+      "text": "envision and attain Ontario’s economic goal prepared by the Ontario Jobs and Investment",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 3,
+      "y": 502.7198486328125
+    },
+    {
+      "text": "Board. The OJIB strategic plan recommends an electronic library to “connect students to new",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 3,
+      "y": 515.3164672851562
+    },
+    {
+      "text": "workplaces, new sources of information and applied learning opportunities”. The ODL will do",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 3,
+      "y": 528.0345458984375
+    },
+    {
+      "text": "that and much more. The ODL will connect students to electronic information, and will also",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 3,
+      "y": 540.6311645507812
+    },
+    {
+      "text": "leverage this investment to help connect all citizens to the electronic information they need as",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 3,
+      "y": 553.227783203125
+    },
+    {
+      "text": "Libraries have long been a key delivery point for public services. The ODL will allow that",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 3,
+      "y": 591.2716674804688
+    },
+    {
+      "text": "delivery point to move closer to citizens, into the smallest of libraries and even into living",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 3,
+      "y": 603.8682861328125
+    },
+    {
+      "text": "Libraries have a long tradition of using a practical, consultative approach to solving problems,",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 3,
+      "y": 641.7906494140625
+    },
+    {
+      "text": "Jurisdiction-wide digital libraries are very practical and very real. The ODL we propose is",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 3,
+      "y": 679.8345336914062
+    },
+    {
+      "text": "leading edge for Ontario but several jurisdictions have forged the path with collaborative",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 3,
+      "y": 692.43115234375
+    },
+    {
+      "text": "digital libraries. We can learn from their experiences. For example, The Alberta Library (TAL)",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 3,
+      "y": 705.02783203125
+    },
+    {
+      "text": "was incorporated in 1997 as a province-wide library consortium. TAL works collaboratively",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 4,
+      "y": 72.12049865722656
+    },
+    {
+      "text": "with its members to promote universal access to materials and resources in more than 250",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 4,
+      "y": 84.71711730957031
+    },
+    {
+      "text": "public, post-secondary, special, government and regional libraries. Unlike ODL, TAL does",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 4,
+      "y": 97.43519592285156
+    },
+    {
+      "text": "not include elementary or secondary schools. However, the timeline and funding we are",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 4,
+      "y": 110.03181457519531
+    },
+    {
+      "text": "proposing for ODL is comparable to TAL‘s experience. TAL’s business planning took several",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 4,
+      "y": 122.74989318847656
+    },
+    {
+      "text": "years. TAL’s implementation plan was supported by 8 million dollars in provincially shared",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 4,
+      "y": 135.3465118408203
+    },
+    {
+      "text": "funding, spread over three years, later revised to 15 million dollars over 4 years. Not only is",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 4,
+      "y": 147.94313049316406
+    },
+    {
+      "text": "Alberta’s population 30% of Ontario’s, TAL does not include elementary or secondary",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 4,
+      "y": 160.6612091064453
+    },
+    {
+      "text": "schools as partners; it has 250 member libraries. ODL envisions universal access for all",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 4,
+      "y": 173.25782775878906
+    },
+    {
+      "text": "10,000,000 Ontarians, with more than 5000 Ontario libraries as partners. Although ODL can",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 4,
+      "y": 185.9759063720703
+    },
+    {
+      "text": "learn from TAL’s practices, the scope of planning and implementing ODL is much larger than",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 4,
+      "y": 198.57252502441406
+    },
+    {
+      "text": "The ODL will be a partnership-based organization providing seamless electronic information",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 4,
+      "y": 236.49488830566406
+    },
+    {
+      "text": "common resources The ODL will recognize the unique responsibilities and needs of public",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 4,
+      "y": 261.8095703125
+    },
+    {
+      "text": "libraries, school libraries, college and university libraries and special libraries. The ODL",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 4,
+      "y": 274.52764892578125
+    },
+    {
+      "text": "envisions a digital network of information resources, allowing members to collaborate when",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 4,
+      "y": 287.1242980957031
+    },
+    {
+      "text": "We will bring consistent, high-quality electronic resources and services to 10 million",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 4,
+      "y": 373.75518798828125
+    },
+    {
+      "text": "We will eliminate barriers to the access to information and create more consistent",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 4,
+      "y": 410.9489440917969
+    },
+    {
+      "text": "We will facilitate consensus among members regarding ODL’s portfolio of electronic",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 4,
+      "y": 472.9826965332031
+    },
+    {
+      "text": "licenses and services",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 4,
+      "y": 485.579345703125
+    },
+    {
+      "text": "We will balance the interests and realities of small and large as well as rich and poor",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 4,
+      "y": 510.17645263671875
+    },
+    {
+      "text": "We will leverage provincial, institutional, and local dollars to realize economies of scale",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 4,
+      "y": 646.123046875
+    },
+    {
+      "text": "and put Ontario dollars to work for everyone",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 4,
+      "y": 658.7196655273438
+    },
+    {
+      "text": "We will be willing to pool talents and dollars in order to provide common services that are",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 4,
+      "y": 683.438232421875
+    },
+    {
+      "text": "We will provide the licenses, infrastructure, services and support that enable local",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 5,
+      "y": 97.43519592285156
+    },
+    {
+      "text": "libraries to provide exceptional services to their clientele. ODL will focus on support,",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 5,
+      "y": 110.03181457519531
+    },
+    {
+      "text": "to the “deep” web (i.e. Commercial, purchased electronic services)",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 5,
+      "y": 185.99806213378906
+    },
+    {
+      "text": "to credible web sites and electronic resources",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 5,
+      "y": 198.5946807861328
+    },
+    {
+      "text": "to digital government information",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 5,
+      "y": 211.19129943847656
+    },
+    {
+      "text": "to local digital collections",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 5,
+      "y": 223.9093780517578
+    },
+    {
+      "text": "to support e-learning",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 5,
+      "y": 261.83184814453125
+    },
+    {
+      "text": "to support citizens, in real-time, as they try to use electronic resources",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 5,
+      "y": 274.5499267578125
+    },
+    {
+      "text": "to assist citizens as they use web-links",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 5,
+      "y": 287.1465759277344
+    },
+    {
+      "text": "for library workers",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 5,
+      "y": 312.4613037109375
+    },
+    {
+      "text": "for the general public",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 5,
+      "y": 325.0579528808594
+    },
+    {
+      "text": "of electronic content on a consortia basis for all member libraries",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 5,
+      "y": 362.9803466796875
+    },
+    {
+      "text": "of common standards for the preservation and archiving local digital content",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 5,
+      "y": 401.024169921875
+    },
+    {
+      "text": "of a common interface to ODL resources and services that can be imbedded in local",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 5,
+      "y": 413.6208190917969
+    },
+    {
+      "text": "library web sites",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 5,
+      "y": 426.2174377441406
+    },
+    {
+      "text": "One local point of entry to access seamless electronic library services and",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 5,
+      "y": 506.6107177734375
+    },
+    {
+      "text": "resources for their personal, educational and professional needs;",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 5,
+      "y": 519.2073974609375
+    },
+    {
+      "text": "Access to credible, high-quality, user-friendly electronic services through their",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 5,
+      "y": 531.9254150390625
+    },
+    {
+      "text": "community, school, or academic library;",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 5,
+      "y": 544.5220336914062
+    },
+    {
+      "text": "Confidence that the electronic services and sources they – and their children",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 5,
+      "y": 557.11865234375
+    },
+    {
+      "text": "– are using are safe, valid, and bringing them both global and local",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 5,
+      "y": 569.8367309570312
+    },
+    {
+      "text": "perspectives;",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 5,
+      "y": 582.4334106445312
+    },
+    {
+      "text": "Electronic information and tools that enhance job skills and the learning",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 5,
+      "y": 595.1514892578125
+    },
+    {
+      "text": "experience",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 5,
+      "y": 607.7481689453125
+    },
+    {
+      "text": "One local point of entry to quality, curriculum- based electronic information",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 5,
+      "y": 645.0633544921875
+    },
+    {
+      "text": "resources and services",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 5,
+      "y": 657.6600341796875
+    },
+    {
+      "text": "Connection to their individual educational environment, whether at the",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 5,
+      "y": 670.3781127929688
+    },
+    {
+      "text": "elementary, secondary or post-secondary levels",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 5,
+      "y": 682.9747314453125
+    },
+    {
+      "text": "Confidence that the services and resources people are using are credible,",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 6,
+      "y": 72.20881652832031
+    },
+    {
+      "text": "available when they need them and adaptable to different learning styles",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 6,
+      "y": 84.80543518066406
+    },
+    {
+      "text": "One point of entry for themselves and their clientele to quality electronic",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 6,
+      "y": 122.84931945800781
+    },
+    {
+      "text": "resources and services that support and enhance their collections, programs",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 6,
+      "y": 135.44593811035156
+    },
+    {
+      "text": "and services",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 6,
+      "y": 148.0425567626953
+    },
+    {
+      "text": "The opportunity to show case their local community, collections, services, and",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 6,
+      "y": 160.76063537597656
+    },
+    {
+      "text": "expertise",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 6,
+      "y": 173.35719299316406
+    },
+    {
+      "text": "The opportunity to gain from the provincial, collaborative partnership in order",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 6,
+      "y": 186.0752716064453
+    },
+    {
+      "text": "to provide a seamless gateway to digital resources and services",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 6,
+      "y": 198.67189025878906
+    },
+    {
+      "text": "point of entry to information services and resources for all Ontario citizens,",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 6,
+      "y": 236.5944366455078
+    },
+    {
+      "text": "connecting to portal initiatives",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 6,
+      "y": 249.31251525878906
+    },
+    {
+      "text": "Support of the Ontario E-Learning strategy through a collaborative digital",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 6,
+      "y": 261.90911865234375
+    },
+    {
+      "text": "library initiative that positions Ontario on the global e-learning scene",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 6,
+      "y": 274.627197265625
+    },
+    {
+      "text": "Improved access and flexibility for all students at all ages and stages",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 6,
+      "y": 287.2238464355469
+    },
+    {
+      "text": "(supports Ontario’s lifelong learning strategy)",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 6,
+      "y": 299.82049560546875
+    },
+    {
+      "text": "The opportunity to address emerging job skills shortages and facilitate school",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 6,
+      "y": 312.53857421875
+    },
+    {
+      "text": "to work and job to job transitions with the necessary information and",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 6,
+      "y": 325.1352233886719
+    },
+    {
+      "text": "knowledge supports and tools",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 6,
+      "y": 337.8533020019531
+    },
+    {
+      "text": "ODL will be an incorporated non-profit organization governed by a Board of Directors elected",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 6,
+      "y": 363.0575866699219
+    },
+    {
+      "text": "by a voting membership. The Board will include representatives from all stakeholders. We",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 6,
+      "y": 375.7756652832031
+    },
+    {
+      "text": "More information regarding the envisioned phasing, funding and resources required for the",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 6,
+      "y": 413.09088134765625
+    },
+    {
+      "text": "The business plan which needs to be developed for the ODL must be a formal business plan",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 6,
+      "y": 503.60870361328125
+    },
+    {
+      "text": "that documents and clearly communicates the ODL’s services, funding and governance",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 6,
+      "y": 516.205322265625
+    },
+    {
+      "text": "structures, as well as implementation plans for 2004-2005, and operational plans for 2005-",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 6,
+      "y": 528.802001953125
+    },
+    {
+      "text": "how the ODL will be implemented, including the timeline",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 6,
+      "y": 603.5648803710938
+    },
+    {
+      "text": "the financial plan for the implementation",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 6,
+      "y": 616.282958984375
+    },
+    {
+      "text": "the financial plan for the first 2 operating years, including capital and operating costs,",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 6,
+      "y": 628.8795776367188
+    },
+    {
+      "text": "a financial forecast for the succeeding 2 operating years",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 6,
+      "y": 654.1943359375
+    },
+    {
+      "text": "the services and products to be delivered by the ODL",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 6,
+      "y": 666.7909545898438
+    },
+    {
+      "text": "how the ODL will operate and be managed following the implementation",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 6,
+      "y": 679.509033203125
+    },
+    {
+      "text": "who will be involved, and what their role/responsibility will be, for both the",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 6,
+      "y": 692.1056518554688
+    },
+    {
+      "text": "implementation and operational stages",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 6,
+      "y": 704.7022705078125
+    },
+    {
+      "text": "the marketing and communications plan for the ODL",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 7,
+      "y": 72.20881652832031
+    },
+    {
+      "text": "the commitment of all stakeholders to their responsibilities",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 7,
+      "y": 84.80543518066406
+    },
+    {
+      "text": "The process of developing this business plan must be extremely consultative to ensure that",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 7,
+      "y": 110.13117980957031
+    },
+    {
+      "text": "The proposal must",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 7,
+      "y": 122.84925842285156
+    },
+    {
+      "text": "The business plan for the ODL must address significant issues. There are, for example,",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 7,
+      "y": 160.77162170410156
+    },
+    {
+      "text": "enormous differences in the financial resources available to libraries mandated to provide",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 7,
+      "y": 173.3682403564453
+    },
+    {
+      "text": "similar services. Some post-secondary and public libraries, particularly those in large urban",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 7,
+      "y": 186.08631896972656
+    },
+    {
+      "text": "areas, have the facilities, funding and technological infrastructure necessary to service their",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 7,
+      "y": 198.6829376220703
+    },
+    {
+      "text": "patrons with electronic services and resources.  Many others, particularly in rural regions, do",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 7,
+      "y": 211.27955627441406
+    },
+    {
+      "text": "2) It is expected that an Interim Report, suitable for distribution to the broader library",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 7,
+      "y": 327.5658874511719
+    },
+    {
+      "text": "community will be available by August 1, 2003 and that there will be an opportunity",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 7,
+      "y": 340.2839660644531
+    },
+    {
+      "text": "3) The business plan must be completed and approved by the ODL Steering Committee",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 7,
+      "y": 377.59918212890625
+    },
+    {
+      "text": "(or proposed team of consultants)",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 7,
+      "y": 456.56878662109375
+    },
+    {
+      "text": "will be expected to work closely with",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 7,
+      "y": 456.56878662109375
+    },
+    {
+      "text": "Given the consultative nature of this business planning process, the firm/consultant will also",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 7,
+      "y": 481.8835144042969
+    },
+    {
+      "text": "be expected to travel and communicate regularly with various stakeholders as well as with",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 7,
+      "y": 494.48016357421875
+    },
+    {
+      "text": "a) name of the firm/consultant",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 7,
+      "y": 556.3925170898438
+    },
+    {
+      "text": "b) names of those individuals who will be engaged in this project, their specific",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 7,
+      "y": 569.110595703125
+    },
+    {
+      "text": "responsibilities on this project and relevant experience/qualifications",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 7,
+      "y": 581.7072143554688
+    },
+    {
+      "text": "c) description of similar engagements that highlight the firm’s experience in business",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 7,
+      "y": 594.3038330078125
+    },
+    {
+      "text": "planning and building stakeholder commitment",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 7,
+      "y": 607.0219116210938
+    },
+    {
+      "text": "d) references with details of work completed for these references",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 7,
+      "y": 619.6185302734375
+    },
+    {
+      "text": "e) description of the approach that will be used for completing the business plan,",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 7,
+      "y": 632.336669921875
+    },
+    {
+      "text": "including a timeline",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 7,
+      "y": 644.9332885742188
+    },
+    {
+      "text": "f) cost to complete the study including estimated expenses (i.e.: travel, etc.) and payment",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 7,
+      "y": 657.5299072265625
+    },
+    {
+      "text": "structure",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 7,
+      "y": 670.2479858398438
+    },
+    {
+      "text": "not necessarily be awarded to the lowest bidder. We reserve the right not to award the contract to",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 8,
+      "y": 135.56690979003906
+    },
+    {
+      "text": "Quality of the proposal /approach outlined for undertaking the business planning process",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 8,
+      "y": 210.19728088378906
+    },
+    {
+      "text": "Cost, including expenses",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 8,
+      "y": 235.51197814941406
+    },
+    {
+      "text": "Timeline and projected completion date",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 8,
+      "y": 248.1085968017578
+    },
+    {
+      "text": "Other relevant factors as determined by the ODL Steering Committee",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 8,
+      "y": 261.31243896484375
+    },
+    {
+      "text": "Questions regarding this RFP should be directed by e-mail only to Michael Ridley",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 8,
+      "y": 286.6271667480469
+    },
+    {
+      "text": "Bidders are asked not to contact any other member of the ODL Catalyst Team or the ODL Steering",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 8,
+      "y": 324.65997314453125
+    },
+    {
+      "text": "March 2003 – September 2003",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 9,
+      "y": 162.8233642578125
+    },
+    {
+      "text": "of all stakeholders it must have competent, dedicated staffing and monies for the travel and",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 9,
+      "y": 289.4349365234375
+    },
+    {
+      "text": "April 2004 – December 2006",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 9,
+      "y": 358.31829833984375
+    },
+    {
+      "text": "Funding from other states and provinces suggest that the ODL could receive",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 9,
+      "y": 369.84197998046875
+    },
+    {
+      "text": "The ODL is implemented and validated",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 9,
+      "y": 415.807373046875
+    },
+    {
+      "text": "The second phase will be to implement the ODL based on the business plan. This phase recognizes",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 9,
+      "y": 438.9643859863281
+    },
+    {
+      "text": "Some of the funding will be new money, although there",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 9,
+      "y": 519.3814086914062
+    },
+    {
+      "text": "is every indication that existing budgets and methods of operating may be modified as a result of",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 9,
+      "y": 530.78564453125
+    },
+    {
+      "text": "recommendations",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 9,
+      "y": 542.309326171875
+    },
+    {
+      "text": ". During this phase the polices, procedures, governance structures and accountability",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 9,
+      "y": 542.309326171875
+    },
+    {
+      "text": "will be made deployed through the ODL. Regular evaluation during this phase will ensure the ODL is",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 9,
+      "y": 577.0
+    },
+    {
+      "text": "January 2007 -",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 9,
+      "y": 634.359619140625
+    },
+    {
+      "text": "$50 Million annually ($35 Million requested from government)",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 9,
+      "y": 645.8833618164062
+    },
+    {
+      "text": "The ODL is fully operational and sustainable",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 9,
+      "y": 668.8013305664062
+    },
+    {
+      "text": "ODL on Ontario’s economy, society and learning support that all library sectors are participants",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 10,
+      "y": 141.2391357421875
+    },
+    {
+      "text": "The proposed funding model requires a continuing government investment, but also recognizes that as",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 10,
+      "y": 170.28240966796875
+    },
+    {
+      "text": "the ODL matures a growing share of ODL funding will come from libraries and non-governmental",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 10,
+      "y": 181.68658447265625
+    },
+    {
+      "text": "enable ongoing funding contributions to ODL. During the same period ODL must build the proposed",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 10,
+      "y": 204.73406982421875
+    },
+    {
+      "text": "during the same period",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 10,
+      "y": 291.7447204589844
+    },
+    {
+      "text": "A $50M budget leverages the consortium buying power of the province’s libraries to secure the best",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 10,
+      "y": 487.5575866699219
+    },
+    {
+      "text": "double benefit: it supports a province-wide library of high quality information resources and it",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 10,
+      "y": 579.498291015625
+    },
+    {
+      "text": "www.odl.on.ca",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 11,
+      "y": 171.3470458984375
+    },
+    {
+      "text": ").  The business",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 11,
+      "y": 171.3470458984375
+    },
+    {
+      "text": "development planning and commitment process will be overseen by a Steering Committee, who are",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 11,
+      "y": 182.87078857421875
+    },
+    {
+      "text": "In broad terms, the ODL Business Plan Steering Committee is responsible for development of the",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 11,
+      "y": 240.3499755859375
+    },
+    {
+      "text": "business plan, securing sector support, and management of the planners and process.  Specific",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 11,
+      "y": 251.87371826171875
+    },
+    {
+      "text": "governance, management, funding model and structure, organizational structure, marketing,",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 11,
+      "y": 297.8391418457031
+    },
+    {
+      "text": "staffing, and evaluation;",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 11,
+      "y": 309.36285400390625
+    },
+    {
+      "text": "communication, and to ensure meaningful opportunities for stakeholder input into decision-",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 11,
+      "y": 332.4102783203125
+    },
+    {
+      "text": "making;",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 11,
+      "y": 343.9339904785156
+    },
+    {
+      "text": "expenditures;",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 11,
+      "y": 378.3856201171875
+    },
+    {
+      "text": "of the business plan;",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 11,
+      "y": 424.48046875
+    },
+    {
+      "text": "representatives to the steering committee",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 11,
+      "y": 516.4112548828125
+    },
+    {
+      "text": "- Ontario School Library Association (OSLA) and The Association of Library Consultants and",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 11,
+      "y": 550.972412109375
+    },
+    {
+      "text": "Coordinators of Ontario (TALCO)  (",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 11,
+      "y": 562.2571411132812
+    },
+    {
+      "text": "Executive Council of OSLA to name representative in",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 11,
+      "y": 562.2571411132812
+    },
+    {
+      "text": "consultation with TALCO",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 11,
+      "y": 573.7808837890625
+    },
+    {
+      "text": "- Ontario Council of University Libraries (OCUL) (",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 11,
+      "y": 596.8283081054688
+    },
+    {
+      "text": "OCUL to name",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 11,
+      "y": 596.8283081054688
+    },
+    {
+      "text": "- Bibliocentre, and Heads of Libraries and Learning Resources (UAG and HLLR",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 11,
+      "y": 619.875732421875
+    },
+    {
+      "text": "to name",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 11,
+      "y": 619.875732421875
+    },
+    {
+      "text": "- Administrators of Medium-sized Public Libraries of Ontario (AMPLO), Administrators of Rural",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 11,
+      "y": 642.9231567382812
+    },
+    {
+      "text": "OLA to appoint one representative",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 12,
+      "y": 72.13585662841797
+    },
+    {
+      "text": "- Role of the OLA ex-officio member: To act as a liaison between the steering committee and",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 12,
+      "y": 83.77910614013672
+    },
+    {
+      "text": "the OLA Board, and to assist the chair with the administrative responsibilities connected with",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 12,
+      "y": 95.30284881591797
+    },
+    {
+      "text": "Groups and organizations named in Section 3 above are responsible for appointing up to two",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 12,
+      "y": 187.83123779296875
+    },
+    {
+      "text": "Committed to the concept of multi-sector partnerships;",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 12,
+      "y": 260.2005615234375
+    },
+    {
+      "text": "Knowledgeable about digital libraries and resources;",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 12,
+      "y": 272.3218688964844
+    },
+    {
+      "text": "Knowledgeable about government structures;",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 12,
+      "y": 284.5627136230469
+    },
+    {
+      "text": "Respected by their communities; influential;",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 12,
+      "y": 296.68402099609375
+    },
+    {
+      "text": "Able to take a consultative approach;",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 12,
+      "y": 308.8053283691406
+    },
+    {
+      "text": "Able to devote time to Steering Committee business: approximately one day per month for",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 12,
+      "y": 323.0262145996094
+    },
+    {
+      "text": "meetings plus 2-3 working days per month on related activities",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 12,
+      "y": 336.22320556640625
+    },
+    {
+      "text": "Expected term on the Steering Committee is the time required to complete development of the",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 12,
+      "y": 382.7829284667969
+    },
+    {
+      "text": "working with the selected consultant(s), OLA, and the Steering Committee to prepare the business",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 12,
+      "y": 500.0220947265625
+    },
+    {
+      "text": "It is expected that in person meetings are held once per month and the majority of business will be",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 12,
+      "y": 569.0249633789062
+    },
+    {
+      "text": "ODL funders to finance the business plan, to hold the funds in a separate account, and",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 12,
+      "y": 672.469482421875
+    },
+    {
+      "text": "disperse them for purposes as  directed by the Steering Committee. OLA will provide",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 12,
+      "y": 683.9932250976562
+    },
+    {
+      "text": "financial reports to the Steering Committee as requested and shall comply with all",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 12,
+      "y": 695.5169677734375
+    },
+    {
+      "text": "ongoing communications and consultation on issues and progress.  The Steering committee",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 13,
+      "y": 95.29357147216797
+    },
+    {
+      "text": "is responsible for strong liaison with government particularly the Chief Information Officer",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 13,
+      "y": 106.69774627685547
+    },
+    {
+      "text": "policies of the Ontario Library Association",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 13,
+      "y": 187.224365234375
+    },
+    {
+      "text": "The ODL Steering Committee will function according to standard conflict of interest guidelines",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 13,
+      "y": 210.2718505859375
+    },
+    {
+      "text": "ensuring that members,  their immediate family members, or their places of employment, will",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 13,
+      "y": 221.7955322265625
+    },
+    {
+      "text": "not benefit financially from the decisions  the Steering Committee might make. As a first",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 13,
+      "y": 233.31927490234375
+    },
+    {
+      "text": "order of business, the Steering Committee will be expected to adopt a conflict of interest policy",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 13,
+      "y": 244.72344970703125
+    },
+    {
+      "text": "The purpose of the ODL is to provide equal access to information for all Ontario citizens through",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 14,
+      "y": 136.9058837890625
+    },
+    {
+      "text": "collaboration and resource sharing. ODL will be a portal - capable of customization as",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 14,
+      "y": 148.42962646484375
+    },
+    {
+      "text": "a home page for local libraries - to organized, comprehensive, authoritative and validated",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 14,
+      "y": 159.953369140625
+    },
+    {
+      "text": "e-information resources to meet the needs of all Ontario citizens at all stages and in all aspects",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 14,
+      "y": 171.3575439453125
+    },
+    {
+      "text": "- directories: companies, associations, organizations, governments, educational institutions,",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 14,
+      "y": 228.95623779296875
+    },
+    {
+      "text": "- almanacs, country information",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 14,
+      "y": 251.8841552734375
+    },
+    {
+      "text": "- dictionaries, thesauri, encyclopedias",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 14,
+      "y": 263.40789794921875
+    },
+    {
+      "text": "-consumer information",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 14,
+      "y": 274.9316101074219
+    },
+    {
+      "text": "- phone books,",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 14,
+      "y": 286.455322265625
+    },
+    {
+      "text": "- travel guides, entertainment guides",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 14,
+      "y": 297.8595275878906
+    },
+    {
+      "text": "- weather information",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 14,
+      "y": 309.38323974609375
+    },
+    {
+      "text": "- media/newspapers",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 14,
+      "y": 320.9069519042969
+    },
+    {
+      "text": "- leisure time, recreational activity guides",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 14,
+      "y": 332.4306640625
+    },
+    {
+      "text": "- indexing and abstracting services",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 14,
+      "y": 343.9543762207031
+    },
+    {
+      "text": "- currency converters,",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 14,
+      "y": 355.47808837890625
+    },
+    {
+      "text": "- virtual reference services",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 14,
+      "y": 366.8822937011719
+    },
+    {
+      "text": "-vocational/career information",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 14,
+      "y": 378.406005859375
+    },
+    {
+      "text": "-internet search engines",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 14,
+      "y": 389.9297180175781
+    },
+    {
+      "text": "-current awareness services",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 14,
+      "y": 401.45343017578125
+    },
+    {
+      "text": "-arts and humanities",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 14,
+      "y": 447.40887451171875
+    },
+    {
+      "text": "- business and economics",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 14,
+      "y": 458.9325866699219
+    },
+    {
+      "text": "- education",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 14,
+      "y": 470.4563293457031
+    },
+    {
+      "text": "-recreation and sports",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 14,
+      "y": 481.98004150390625
+    },
+    {
+      "text": "-entertainment - games, activities for kids",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 14,
+      "y": 493.3842468261719
+    },
+    {
+      "text": "-health information",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 14,
+      "y": 504.90802001953125
+    },
+    {
+      "text": "-science and technology",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 14,
+      "y": 516.4317626953125
+    },
+    {
+      "text": "-social sciences",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 14,
+      "y": 527.9554443359375
+    },
+    {
+      "text": "-society and culture",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 14,
+      "y": 539.4791259765625
+    },
+    {
+      "text": "-guides to information gathering methodologies, information literacy",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 14,
+      "y": 585.4345703125
+    },
+    {
+      "text": "-study guides",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 14,
+      "y": 596.958251953125
+    },
+    {
+      "text": "-study skill development",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 14,
+      "y": 608.4819946289062
+    },
+    {
+      "text": "-web-based curricula",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 14,
+      "y": 620.0057373046875
+    },
+    {
+      "text": "-internet search guides",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 14,
+      "y": 631.4099731445312
+    }
+  ]
+}

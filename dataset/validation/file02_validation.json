@@ -1,0 +1,1370 @@
+{
+  "label_counts": {
+    "H1": 2,
+    "H3": 40,
+    "H2": 1,
+    "non-heading": 403
+  },
+  "total_entries": 446,
+  "low_confidence_count": 194,
+  "low_confidence_entries": [
+    {
+      "text": "Acknowledgements",
+      "label": "H3",
+      "confidence": 0.5833333333333334,
+      "page": 5,
+      "y": 108.93620300292969
+    },
+    {
+      "text": "............................................................................",
+      "label": "H3",
+      "confidence": 0.5384615384615385,
+      "page": 4,
+      "y": 179.64599609375
+    },
+    {
+      "text": "...............................................................",
+      "label": "H3",
+      "confidence": 0.5384615384615385,
+      "page": 4,
+      "y": 197.1656494140625
+    },
+    {
+      "text": ".........................................",
+      "label": "H3",
+      "confidence": 0.5384615384615385,
+      "page": 4,
+      "y": 289.73394775390625
+    },
+    {
+      "text": "2.1 Intended Audience",
+      "label": "H3",
+      "confidence": 0.5384615384615385,
+      "page": 7,
+      "y": 217.35379028320312
+    },
+    {
+      "text": "2.2 Career Paths for Testers",
+      "label": "H3",
+      "confidence": 0.5384615384615385,
+      "page": 7,
+      "y": 484.5238037109375
+    },
+    {
+      "text": "2.3 Learning Objectives",
+      "label": "H3",
+      "confidence": 0.5384615384615385,
+      "page": 7,
+      "y": 613.673828125
+    },
+    {
+      "text": "2.4 Entry Requirements",
+      "label": "H3",
+      "confidence": 0.5384615384615385,
+      "page": 8,
+      "y": 156.99380493164062
+    },
+    {
+      "text": "2.5 Structure and Course Duration",
+      "label": "H3",
+      "confidence": 0.5384615384615385,
+      "page": 8,
+      "y": 217.11380004882812
+    },
+    {
+      "text": "2.6 Keeping It Current",
+      "label": "H3",
+      "confidence": 0.5384615384615385,
+      "page": 9,
+      "y": 133.95376586914062
+    },
+    {
+      "text": "3.1 Business Outcomes",
+      "label": "H3",
+      "confidence": 0.5384615384615385,
+      "page": 10,
+      "y": 187.95376586914062
+    },
+    {
+      "text": "3.2 Content",
+      "label": "H3",
+      "confidence": 0.5384615384615385,
+      "page": 10,
+      "y": 533.0038452148438
+    },
+    {
+      "text": "4.1 Trademarks",
+      "label": "H3",
+      "confidence": 0.5384615384615385,
+      "page": 12,
+      "y": 171.39376831054688
+    },
+    {
+      "text": "4.2 Documents and Web Sites",
+      "label": "H3",
+      "confidence": 0.5384615384615385,
+      "page": 12,
+      "y": 257.4637756347656
+    },
+    {
+      "text": "1.",
+      "label": "H3",
+      "confidence": 0.5121951219512195,
+      "page": 4,
+      "y": 179.64599609375
+    },
+    {
+      "text": "2.",
+      "label": "H3",
+      "confidence": 0.5121951219512195,
+      "page": 4,
+      "y": 197.1656494140625
+    },
+    {
+      "text": "3.",
+      "label": "H3",
+      "confidence": 0.5121951219512195,
+      "page": 4,
+      "y": 289.73394775390625
+    },
+    {
+      "text": "4.",
+      "label": "H3",
+      "confidence": 0.5121951219512195,
+      "page": 4,
+      "y": 336.17742919921875
+    },
+    {
+      "text": "Version 1.0",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 1,
+      "y": 382.4300231933594
+    },
+    {
+      "text": "Overview",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 2,
+      "y": 41.58000183105469
+    },
+    {
+      "text": "Overview",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 3,
+      "y": 41.58000183105469
+    },
+    {
+      "text": "18 JUNE 2013",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 3,
+      "y": 151.80621337890625
+    },
+    {
+      "text": "23 JULY 2013",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 3,
+      "y": 164.04620361328125
+    },
+    {
+      "text": "6 NOV 2013",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 3,
+      "y": 176.28619384765625
+    },
+    {
+      "text": "11 DEC 2013",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 3,
+      "y": 188.52618408203125
+    },
+    {
+      "text": "20 DEC 2013",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 3,
+      "y": 200.7662353515625
+    },
+    {
+      "text": "31 MAY 2014",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 3,
+      "y": 213.0062255859375
+    },
+    {
+      "text": "Overview",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 4,
+      "y": 41.58000183105469
+    },
+    {
+      "text": "3",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 4,
+      "y": 144.7261962890625
+    },
+    {
+      "text": "4",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 4,
+      "y": 162.1263427734375
+    },
+    {
+      "text": "6",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 4,
+      "y": 179.64599609375
+    },
+    {
+      "text": "7",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 4,
+      "y": 197.1656494140625
+    },
+    {
+      "text": "10",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 4,
+      "y": 289.73394775390625
+    },
+    {
+      "text": "12",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 4,
+      "y": 336.17742919921875
+    },
+    {
+      "text": "Overview",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 5,
+      "y": 41.58000183105469
+    },
+    {
+      "text": "Overview",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 6,
+      "y": 41.58000183105469
+    },
+    {
+      "text": "1.",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 6,
+      "y": 122.97618103027344
+    },
+    {
+      "text": "Overview",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 7,
+      "y": 41.58000183105469
+    },
+    {
+      "text": "2.",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 7,
+      "y": 122.97618103027344
+    },
+    {
+      "text": "Overview",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 8,
+      "y": 41.58000183105469
+    },
+    {
+      "text": "Overview",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 9,
+      "y": 41.58000183105469
+    },
+    {
+      "text": "Overview",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 10,
+      "y": 41.58000183105469
+    },
+    {
+      "text": "3.",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 10,
+      "y": 119.85618591308594
+    },
+    {
+      "text": "Overview",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 11,
+      "y": 41.58000183105469
+    },
+    {
+      "text": "Overview",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 12,
+      "y": 41.58000183105469
+    },
+    {
+      "text": "4.",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 12,
+      "y": 122.97618103027344
+    },
+    {
+      "text": "..........................................................................................................................................",
+      "label": "non-heading",
+      "confidence": 0.5504587155963303,
+      "page": 4,
+      "y": 144.7261962890625
+    },
+    {
+      "text": "........................................................................................................................................",
+      "label": "non-heading",
+      "confidence": 0.5504587155963303,
+      "page": 4,
+      "y": 162.1263427734375
+    },
+    {
+      "text": "..........................................................................................................................................",
+      "label": "non-heading",
+      "confidence": 0.5504587155963303,
+      "page": 4,
+      "y": 336.17742919921875
+    },
+    {
+      "text": "Copyright Notice",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 1,
+      "y": 652.2861938476562
+    },
+    {
+      "text": "International",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 2,
+      "y": 38.62621307373047
+    },
+    {
+      "text": "Software Testing",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 2,
+      "y": 50.14617156982422
+    },
+    {
+      "text": "Foundation Level Extension –",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 2,
+      "y": 58.42620086669922
+    },
+    {
+      "text": "Agile Tester",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 2,
+      "y": 58.42620086669922
+    },
+    {
+      "text": "Qualifications",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 2,
+      "y": 61.66619110107422
+    },
+    {
+      "text": "Board",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 2,
+      "y": 61.66619110107422
+    },
+    {
+      "text": "Version 2014",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 2,
+      "y": 718.683349609375
+    },
+    {
+      "text": "International",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 3,
+      "y": 38.62621307373047
+    },
+    {
+      "text": "Software Testing",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 3,
+      "y": 50.14617156982422
+    },
+    {
+      "text": "Foundation Level Extension –",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 3,
+      "y": 58.42620086669922
+    },
+    {
+      "text": "Agile Tester",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 3,
+      "y": 58.42620086669922
+    },
+    {
+      "text": "Qualifications Board",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 3,
+      "y": 61.66619110107422
+    },
+    {
+      "text": "0.1",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 3,
+      "y": 151.80621337890625
+    },
+    {
+      "text": "Initial version",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 3,
+      "y": 151.80621337890625
+    },
+    {
+      "text": "0.2",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 3,
+      "y": 164.04620361328125
+    },
+    {
+      "text": "0.3",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 3,
+      "y": 176.28619384765625
+    },
+    {
+      "text": "0.7",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 3,
+      "y": 188.52618408203125
+    },
+    {
+      "text": "Amended Business Outcomes and Chapters matching",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 3,
+      "y": 188.52618408203125
+    },
+    {
+      "text": "0.8",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 3,
+      "y": 200.7662353515625
+    },
+    {
+      "text": "1.0",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 3,
+      "y": 213.0062255859375
+    },
+    {
+      "text": "GA release for Agile Extension",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 3,
+      "y": 213.0062255859375
+    },
+    {
+      "text": "Version 2014",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 3,
+      "y": 718.6875610351562
+    },
+    {
+      "text": "International",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 4,
+      "y": 38.62621307373047
+    },
+    {
+      "text": "Software Testing",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 4,
+      "y": 50.14617156982422
+    },
+    {
+      "text": "Foundation Level Extension –",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 4,
+      "y": 58.42620086669922
+    },
+    {
+      "text": "Agile Tester",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 4,
+      "y": 58.42620086669922
+    },
+    {
+      "text": "Qualifications",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 4,
+      "y": 61.66619110107422
+    },
+    {
+      "text": "Board",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 4,
+      "y": 61.66619110107422
+    },
+    {
+      "text": "2.1",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 4,
+      "y": 214.8048095703125
+    },
+    {
+      "text": "Intended Audience",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 4,
+      "y": 214.8048095703125
+    },
+    {
+      "text": "2.2",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 4,
+      "y": 226.32855224609375
+    },
+    {
+      "text": "Career Paths for Testers",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 4,
+      "y": 226.32855224609375
+    },
+    {
+      "text": "2.3",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 4,
+      "y": 237.76263427734375
+    },
+    {
+      "text": "Learning Objectives",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 4,
+      "y": 237.76263427734375
+    },
+    {
+      "text": "2.4",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 4,
+      "y": 249.286376953125
+    },
+    {
+      "text": "Entry Requirements",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 4,
+      "y": 249.286376953125
+    },
+    {
+      "text": "2.5",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 4,
+      "y": 260.81011962890625
+    },
+    {
+      "text": "Structure and Course Duration",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 4,
+      "y": 260.81011962890625
+    },
+    {
+      "text": "2.6",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 4,
+      "y": 272.3338317871094
+    },
+    {
+      "text": "Keeping It Current",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 4,
+      "y": 272.3338317871094
+    },
+    {
+      "text": "3.1",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 4,
+      "y": 307.37310791015625
+    },
+    {
+      "text": "Business Outcomes",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 4,
+      "y": 307.37310791015625
+    },
+    {
+      "text": "3.2",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 4,
+      "y": 318.7773132324219
+    },
+    {
+      "text": "Content",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 4,
+      "y": 318.7773132324219
+    },
+    {
+      "text": "4.1",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 4,
+      "y": 353.81658935546875
+    },
+    {
+      "text": "Trademarks",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 4,
+      "y": 353.81658935546875
+    },
+    {
+      "text": "4.2",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 4,
+      "y": 365.3403015136719
+    },
+    {
+      "text": "Documents and Web Sites",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 4,
+      "y": 365.3403015136719
+    },
+    {
+      "text": "Version 2014",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 4,
+      "y": 718.711181640625
+    },
+    {
+      "text": "International",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 5,
+      "y": 38.62621307373047
+    },
+    {
+      "text": "Software Testing",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 5,
+      "y": 50.14617156982422
+    },
+    {
+      "text": "Foundation Level Extension –",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 5,
+      "y": 58.42620086669922
+    },
+    {
+      "text": "Agile Tester",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 5,
+      "y": 58.42620086669922
+    },
+    {
+      "text": "Qualifications",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 5,
+      "y": 61.66619110107422
+    },
+    {
+      "text": "Board",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 5,
+      "y": 61.66619110107422
+    },
+    {
+      "text": "Group had the following membership: Rex Black (Chair), Bertrand Cornanguer (Vice Chair), Gerry",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 5,
+      "y": 213.7294921875
+    },
+    {
+      "text": "Coleman (Learning Objectives Lead), Debra Friedenberg (Exam Lead), Alon Linetzki (Business Outcomes",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 5,
+      "y": 225.25323486328125
+    },
+    {
+      "text": "Authors: Rex Black, Anders Claesson, Gerry Coleman, Bertrand Cornanguer, Istvan Forgacs, Alon",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 5,
+      "y": 259.84429931640625
+    },
+    {
+      "text": "Internal Reviewers: Mette Bruhn-Pedersen, Christopher Clements, Alessandro Collino, Debra",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 5,
+      "y": 294.2859802246094
+    },
+    {
+      "text": "Friedenberg, Kari Kakkonen, Beata Karpinska, Sammy Kolluru, Jennifer Leger, Thomas Mueller, Tuula",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 5,
+      "y": 305.8096923828125
+    },
+    {
+      "text": "Pääkkönen, Meile Posthuma, Gabor Puhalla, Lloyd Roden, Marko Rytkönen, Monika Stoecklein-Olsen,",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 5,
+      "y": 317.3334045410156
+    },
+    {
+      "text": "Almog, Richard Berns, Stephen Bird, Monika Bögge, Afeng Chai, Josephine Crawford, Tibor Csöndes,",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 5,
+      "y": 374.8226318359375
+    },
+    {
+      "text": "Huba Demeter, Arnaud Foucal, Cyril Fumery, Kobi Halperin, Inga Hansen, Hanne Hinz, Jidong Hu, Phill",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 5,
+      "y": 386.36627197265625
+    },
+    {
+      "text": "Morgan,",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 5,
+      "y": 409.4136962890625
+    },
+    {
+      "text": "Ninna Morin,",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 5,
+      "y": 409.4136962890625
+    },
+    {
+      "text": "Ingvar Nordstrom,",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 5,
+      "y": 409.4136962890625
+    },
+    {
+      "text": "Chris",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 5,
+      "y": 409.4136962890625
+    },
+    {
+      "text": "O’Dea,",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 5,
+      "y": 409.4136962890625
+    },
+    {
+      "text": "Klaus",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 5,
+      "y": 409.4136962890625
+    },
+    {
+      "text": "Olsen, Ismo",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 5,
+      "y": 409.4136962890625
+    },
+    {
+      "text": "Paukamainen,",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 5,
+      "y": 409.4136962890625
+    },
+    {
+      "text": "Nathalie Phung,",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 5,
+      "y": 409.4136962890625
+    },
+    {
+      "text": "Sandberg, Dakar Shalom,  Jian Shen, Marco Sogliani, Lucjan Stapp, Yaron Tsubery, Sabine Uhde,",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 5,
+      "y": 432.34161376953125
+    },
+    {
+      "text": "Version 2014",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 5,
+      "y": 718.7413940429688
+    },
+    {
+      "text": "International",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 6,
+      "y": 38.62621307373047
+    },
+    {
+      "text": "Software Testing",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 6,
+      "y": 50.14617156982422
+    },
+    {
+      "text": "Foundation Level Extension –",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 6,
+      "y": 58.42620086669922
+    },
+    {
+      "text": "Agile Tester",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 6,
+      "y": 58.42620086669922
+    },
+    {
+      "text": "Qualifications Board",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 6,
+      "y": 61.66619110107422
+    },
+    {
+      "text": "Agile Tester",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 6,
+      "y": 342.548095703125
+    },
+    {
+      "text": "Version 2014",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 6,
+      "y": 718.727294921875
+    },
+    {
+      "text": "International",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 7,
+      "y": 38.62621307373047
+    },
+    {
+      "text": "Software Testing",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 7,
+      "y": 50.14617156982422
+    },
+    {
+      "text": "Foundation Level Extension –",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 7,
+      "y": 58.42620086669922
+    },
+    {
+      "text": "Agile Tester",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 7,
+      "y": 58.42620086669922
+    },
+    {
+      "text": "Qualifications Board",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 7,
+      "y": 61.66619110107422
+    },
+    {
+      "text": "The certification for Foundation Level Extension –",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 7,
+      "y": 146.28619384765625
+    },
+    {
+      "text": "The Foundation Level Extension –",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 7,
+      "y": 240.876220703125
+    },
+    {
+      "text": "1. Professionals who have achieved in-depth testing experience in traditional methods and would",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 7,
+      "y": 252.39996337890625
+    },
+    {
+      "text": "2. Junior professional testers who are just starting in the testing profession, have received the",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 7,
+      "y": 275.4474182128906
+    },
+    {
+      "text": "3. Professionals who are relatively new to testing and are required to implement test approaches,",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 7,
+      "y": 309.8990478515625
+    },
+    {
+      "text": "4. Professionals who are experienced in their role (including unit testing) and need more",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 7,
+      "y": 332.94647216796875
+    },
+    {
+      "text": "This Foundation Level Extension –",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 7,
+      "y": 413.49298095703125
+    },
+    {
+      "text": "People possessing an ISTQB Foundation Level Extension –",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 7,
+      "y": 565.53515625
+    },
+    {
+      "text": "Version 2014",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 7,
+      "y": 718.6888427734375
+    },
+    {
+      "text": "International",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 8,
+      "y": 38.62621307373047
+    },
+    {
+      "text": "Software Testing",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 8,
+      "y": 50.14617156982422
+    },
+    {
+      "text": "Foundation Level Extension –",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 8,
+      "y": 58.42620086669922
+    },
+    {
+      "text": "Agile Tester",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 8,
+      "y": 58.42620086669922
+    },
+    {
+      "text": "Qualifications Board",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 8,
+      "y": 61.66619110107422
+    },
+    {
+      "text": "The Foundation Level Extension –",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 8,
+      "y": 240.63623046875
+    },
+    {
+      "text": "Baseline: Foundation",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 8,
+      "y": 319.59619140625
+    },
+    {
+      "text": "Extension: Agile Tester",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 8,
+      "y": 337.59619140625
+    },
+    {
+      "text": "Version 2014",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 8,
+      "y": 718.6875610351562
+    },
+    {
+      "text": "International",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 9,
+      "y": 38.62621307373047
+    },
+    {
+      "text": "Software Testing",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 9,
+      "y": 50.14617156982422
+    },
+    {
+      "text": "Foundation Level Extension –",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 9,
+      "y": 58.42620086669922
+    },
+    {
+      "text": "Agile Tester",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 9,
+      "y": 58.42620086669922
+    },
+    {
+      "text": "Qualifications Board",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 9,
+      "y": 61.66619110107422
+    },
+    {
+      "text": "Version 2014",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 9,
+      "y": 718.7022705078125
+    },
+    {
+      "text": "International",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 10,
+      "y": 38.62621307373047
+    },
+    {
+      "text": "Software Testing",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 10,
+      "y": 50.14617156982422
+    },
+    {
+      "text": "Foundation Level Extension –",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 10,
+      "y": 58.42620086669922
+    },
+    {
+      "text": "Agile Tester",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 10,
+      "y": 58.42620086669922
+    },
+    {
+      "text": "Qualifications Board",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 10,
+      "y": 61.66619110107422
+    },
+    {
+      "text": "Extension –",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 10,
+      "y": 222.969970703125
+    },
+    {
+      "text": "An Agile Tester can…",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 10,
+      "y": 245.91778564453125
+    },
+    {
+      "text": "AFM1",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 10,
+      "y": 268.9561767578125
+    },
+    {
+      "text": "AFM2",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 10,
+      "y": 303.5162048339844
+    },
+    {
+      "text": "AFM3",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 10,
+      "y": 328.4761962890625
+    },
+    {
+      "text": "AFM4",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 10,
+      "y": 353.55621337890625
+    },
+    {
+      "text": "AFM5",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 10,
+      "y": 378.6361999511719
+    },
+    {
+      "text": "AFM6",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 10,
+      "y": 403.7362060546875
+    },
+    {
+      "text": "AFM7",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 10,
+      "y": 438.17620849609375
+    },
+    {
+      "text": "In general, a Certified Tester Foundation Level –",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 10,
+      "y": 484.856201171875
+    },
+    {
+      "text": "Chapter 1: Agile Software Development",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 10,
+      "y": 556.5261840820312
+    },
+    {
+      "text": "Version 2014",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 10,
+      "y": 718.7149047851562
+    },
+    {
+      "text": "International",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 11,
+      "y": 38.62621307373047
+    },
+    {
+      "text": "Software Testing",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 11,
+      "y": 50.14617156982422
+    },
+    {
+      "text": "Foundation Level Extension –",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 11,
+      "y": 58.42620086669922
+    },
+    {
+      "text": "Agile Tester",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 11,
+      "y": 58.42620086669922
+    },
+    {
+      "text": "Qualifications",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 11,
+      "y": 61.66619110107422
+    },
+    {
+      "text": "Board",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 11,
+      "y": 61.66619110107422
+    },
+    {
+      "text": "Chapter 2: Fundamental Agile Testing Principles, Practices, and Processes",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 11,
+      "y": 108.84618377685547
+    },
+    {
+      "text": "Chapter 3: Agile Testing Methods, Techniques, and Tools",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 11,
+      "y": 263.09686279296875
+    },
+    {
+      "text": "Version 2014",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 11,
+      "y": 718.7469482421875
+    },
+    {
+      "text": "International",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 12,
+      "y": 38.62621307373047
+    },
+    {
+      "text": "Software Testing",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 12,
+      "y": 50.14617156982422
+    },
+    {
+      "text": "Foundation Level Extension –",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 12,
+      "y": 58.42620086669922
+    },
+    {
+      "text": "Agile Tester",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 12,
+      "y": 58.42620086669922
+    },
+    {
+      "text": "Qualifications Board",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 12,
+      "y": 61.66619110107422
+    },
+    {
+      "text": "ISTQB",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 12,
+      "y": 220.92169189453125
+    },
+    {
+      "text": "Web site of the International Software Testing Qualifications Board. Refer",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 12,
+      "y": 295.4761962890625
+    },
+    {
+      "text": "Version 2014",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 12,
+      "y": 718.6875610351562
+    }
+  ]
+}

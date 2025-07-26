@@ -1,0 +1,200 @@
+{
+  "label_counts": {
+    "H3": 24,
+    "H2": 1,
+    "non-heading": 30
+  },
+  "total_entries": 55,
+  "low_confidence_count": 27,
+  "low_confidence_entries": [
+    {
+      "text": "10.",
+      "label": "H3",
+      "confidence": 0.5833333333333334,
+      "page": 1,
+      "y": 416.174560546875
+    },
+    {
+      "text": "11.",
+      "label": "H3",
+      "confidence": 0.5833333333333334,
+      "page": 1,
+      "y": 498.6121826171875
+    },
+    {
+      "text": "12.",
+      "label": "H3",
+      "confidence": 0.5833333333333334,
+      "page": 1,
+      "y": 567.0081787109375
+    },
+    {
+      "text": "Signature of Government Servant.",
+      "label": "H3",
+      "confidence": 0.5833333333333334,
+      "page": 1,
+      "y": 690.7425537109375
+    },
+    {
+      "text": "Application form for grant of LTC advance",
+      "label": "H2",
+      "confidence": 0.5634235991298477,
+      "page": 1,
+      "y": 106.07836151123047
+    },
+    {
+      "text": "1.",
+      "label": "H3",
+      "confidence": 0.5121951219512195,
+      "page": 1,
+      "y": 135.93528747558594
+    },
+    {
+      "text": "2.",
+      "label": "H3",
+      "confidence": 0.5121951219512195,
+      "page": 1,
+      "y": 154.05015563964844
+    },
+    {
+      "text": "3.",
+      "label": "H3",
+      "confidence": 0.5121951219512195,
+      "page": 1,
+      "y": 180.9252166748047
+    },
+    {
+      "text": "4.",
+      "label": "H3",
+      "confidence": 0.5121951219512195,
+      "page": 1,
+      "y": 207.80027770996094
+    },
+    {
+      "text": "5.",
+      "label": "H3",
+      "confidence": 0.5121951219512195,
+      "page": 1,
+      "y": 225.91514587402344
+    },
+    {
+      "text": "6.",
+      "label": "H3",
+      "confidence": 0.5121951219512195,
+      "page": 1,
+      "y": 241.09690856933594
+    },
+    {
+      "text": "7.",
+      "label": "H3",
+      "confidence": 0.5121951219512195,
+      "page": 1,
+      "y": 265.0389404296875
+    },
+    {
+      "text": "8.",
+      "label": "H3",
+      "confidence": 0.5121951219512195,
+      "page": 1,
+      "y": 309.5611572265625
+    },
+    {
+      "text": "9.",
+      "label": "H3",
+      "confidence": 0.5121951219512195,
+      "page": 1,
+      "y": 362.833740234375
+    },
+    {
+      "text": "1.",
+      "label": "H3",
+      "confidence": 0.5121951219512195,
+      "page": 1,
+      "y": 476.23907470703125
+    },
+    {
+      "text": "2.",
+      "label": "H3",
+      "confidence": 0.5121951219512195,
+      "page": 1,
+      "y": 488.47802734375
+    },
+    {
+      "text": "3.",
+      "label": "H3",
+      "confidence": 0.5121951219512195,
+      "page": 1,
+      "y": 500.65850830078125
+    },
+    {
+      "text": "4.",
+      "label": "H3",
+      "confidence": 0.5121951219512195,
+      "page": 1,
+      "y": 512.9559326171875
+    },
+    {
+      "text": "5.",
+      "label": "H3",
+      "confidence": 0.5121951219512195,
+      "page": 1,
+      "y": 529.4532470703125
+    },
+    {
+      "text": "6.",
+      "label": "H3",
+      "confidence": 0.5121951219512195,
+      "page": 1,
+      "y": 541.6921997070312
+    },
+    {
+      "text": "Name of the Government Servant",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 1,
+      "y": 132.9924774169922
+    },
+    {
+      "text": "Designation",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 1,
+      "y": 151.0488739013672
+    },
+    {
+      "text": "Date of entering the Central Government",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 1,
+      "y": 169.1637420654297
+    },
+    {
+      "text": "Service",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 1,
+      "y": 186.74266052246094
+    },
+    {
+      "text": "PAY + SI + NPA",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 1,
+      "y": 204.8574676513672
+    },
+    {
+      "text": "Home Town as recorded in the Service Book",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 1,
+      "y": 241.09690856933594
+    },
+    {
+      "text": "Single",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 1,
+      "y": 395.59442138671875
+    }
+  ]
+}

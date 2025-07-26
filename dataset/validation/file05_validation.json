@@ -1,0 +1,110 @@
+{
+  "label_counts": {
+    "H2": 4,
+    "H3": 14,
+    "H1": 1,
+    "non-heading": 13
+  },
+  "total_entries": 32,
+  "low_confidence_count": 14,
+  "low_confidence_entries": [
+    {
+      "text": "TOPJUMP.COM",
+      "label": "H3",
+      "confidence": 0.5681727309076369,
+      "page": 1,
+      "y": 581.2301635742188
+    },
+    {
+      "text": "(NEAR DIXIE STAMPEDE",
+      "label": "H3",
+      "confidence": 0.5632834613829357,
+      "page": 1,
+      "y": 500.79937744140625
+    },
+    {
+      "text": "THE PARKWAY)",
+      "label": "H3",
+      "confidence": 0.5632834613829357,
+      "page": 1,
+      "y": 500.79937744140625
+    },
+    {
+      "text": "ON",
+      "label": "non-heading",
+      "confidence": 0.5155131264916468,
+      "page": 1,
+      "y": 500.79937744140625
+    },
+    {
+      "text": "CLOSED TOED SHOES",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 1,
+      "y": 555.747802734375
+    },
+    {
+      "text": "ARE",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 1,
+      "y": 555.747802734375
+    },
+    {
+      "text": "REQUIRED FOR CLIMBING",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 1,
+      "y": 555.747802734375
+    },
+    {
+      "text": "PARENTS",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 1,
+      "y": 571.8294677734375
+    },
+    {
+      "text": "GUARDIANS NOT ATTENDING THE PARTY,",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 1,
+      "y": 571.8318481445312
+    },
+    {
+      "text": "PLEASE VISIT",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 1,
+      "y": 581.1941528320312
+    },
+    {
+      "text": "FILL",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 1,
+      "y": 581.1941528320312
+    },
+    {
+      "text": "OUT",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 1,
+      "y": 581.1941528320312
+    },
+    {
+      "text": "WAIVER",
+      "label": "non-heading",
+      "confidence": 0.5172413793103449,
+      "page": 1,
+      "y": 581.1941528320312
+    },
+    {
+      "text": "SO YOUR CHILD CAN ATTEND.",
+      "label": "non-heading",
+      "confidence": 0.5504587155963303,
+      "page": 1,
+      "y": 590.0763549804688
+    }
+  ]
+}

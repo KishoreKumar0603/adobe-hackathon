@@ -1,0 +1,89 @@
+{
+  "label_counts": {
+    "H1": 1,
+    "H2": 3,
+    "H3": 1,
+    "non-heading": 70
+  },
+  "total_entries": 75,
+  "low_confidence_count": 11,
+  "low_confidence_entries": [
+    {
+      "text": "PATHWAY OPTIONS",
+      "label": "H2",
+      "confidence": 0.5361911454673226,
+      "page": 1,
+      "y": 438.1753845214844
+    },
+    {
+      "text": ". *",
+      "label": "H3",
+      "confidence": 0.5121951219512195,
+      "page": 1,
+      "y": 610.657958984375
+    },
+    {
+      "text": "Mission Statement:",
+      "label": "non-heading",
+      "confidence": 0.5258964143426295,
+      "page": 1,
+      "y": 88.69420623779297
+    },
+    {
+      "text": "Goals:",
+      "label": "non-heading",
+      "confidence": 0.5258964143426295,
+      "page": 1,
+      "y": 182.6382598876953
+    },
+    {
+      "text": "4 credits of Math - At least one math",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 1,
+      "y": 484.5746765136719
+    },
+    {
+      "text": "4 credits of Math",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 1,
+      "y": 502.58599853515625
+    },
+    {
+      "text": "4 credits of Science- At least one",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 1,
+      "y": 511.5926513671875
+    },
+    {
+      "text": "4 credits of Science",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 1,
+      "y": 516.094970703125
+    },
+    {
+      "text": "4 credits of STEM-designated electives",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 1,
+      "y": 529.60400390625
+    },
+    {
+      "text": "4 credits of STEM-designated electives",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 1,
+      "y": 552.1196899414062
+    },
+    {
+      "text": "Science/Technology Class",
+      "label": "non-heading",
+      "confidence": 0.5882352941176471,
+      "page": 1,
+      "y": 579.1376953125
+    }
+  ]
+}
