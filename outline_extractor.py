@@ -1,80 +1,91 @@
+import json, re
+from pathlib import Path
 import fitz  # PyMuPDF
-from collections import defaultdict
+import numpy as np
 
-def extract_headings(pdf_path):
-    doc = fitz.open(pdf_path)
-    font_stats = defaultdict(int)
-    text_count = defaultdict(int)
-    all_spans = []
+class PDFOutlineExtractor:
+    def extract_text_blocks(self, pdf_path):
+        doc = fitz.open(pdf_path)
+        blocks = []
+        for page_num in range(len(doc)):
+            for b in doc[page_num].get_text("dict")["blocks"]:
+                if "lines" not in b: continue
+                for line in b["lines"]:
+                    for span in line["spans"]:
+                        text = span["text"].strip()
+                        if text:
+                            blocks.append({
+                                "text": text,
+                                "page": page_num + 1,
+                                "font_size": span["size"],
+                                "font_flags": span["flags"],
+                                "font": span["font"]
+                            })
+        return blocks
 
-    # Step 1: Collect font stats and spans with metadata
-    for page in doc:
-        blocks = page.get_text("dict")["blocks"]
-        for block in blocks:
-            for line in block.get("lines", []):
-                for span in line.get("spans", []):
-                    size = round(span["size"], 1)
-                    text = span["text"].strip()
-                    y = span["origin"][1]
-                    is_bold = "Bold" in span.get("font", "")
-                    if text:
-                        font_stats[size] += 1
-                        text_count[text] += 1
-                        all_spans.append({
-                            "text": text,
-                            "size": size,
-                            "y": y,
-                            "bold": is_bold,
-                            "font": span.get("font", ""),
-                            "page": page.number + 1
-                        })
+    def detect_title(self, blocks):
+        first_page = [b for b in blocks if b["page"] == 1]
+        if not first_page: return "Untitled Document"
+        max_size = max(b["font_size"] for b in first_page)
+        title_candidates = [b for b in first_page if b["font_size"] >= max_size * 0.95]
+        for b in title_candidates:
+            if 5 < len(b["text"]) < 200: return b["text"]
+        return "Untitled Document"
 
-    # Step 2: Assign heading levels based on font size
-    sorted_sizes = sorted(font_stats.items(), key=lambda x: (-x[0]))
-    font_map = {}
-    if sorted_sizes:
-        font_map[sorted_sizes[0][0]] = "Title"
-    if len(sorted_sizes) > 1:
-        font_map[sorted_sizes[1][0]] = "H1"
-    if len(sorted_sizes) > 2:
-        font_map[sorted_sizes[2][0]] = "H2"
-    if len(sorted_sizes) > 3:
-        font_map[sorted_sizes[3][0]] = "H3"
+    def is_heading_candidate(self, block, median_font):
+        text = block["text"]
+        if block["font_size"] < median_font * 1.05: return False
+        if re.match(r'^(\d+[\.\d]*)\s+.+', text): return True
+        if text.isupper() and len(text) > 5: return True
+        if re.match(r'^[A-Z][a-z]+(?:\s+[A-Z][a-z]+)*$', text): return True
+        return False
 
-    outline = []
-    title = ""
+    def classify_level(self, text):
+        if re.match(r'^\d+\.\d+\.\d+', text): return "H3"
+        elif re.match(r'^\d+\.\d+', text): return "H2"
+        elif re.match(r'^\d+', text): return "H1"
+        return None
 
-    # Step 3: Use filters to find clean headings
-    for span in all_spans:
-        text = span["text"]
-        size = span["size"]
-        y = span["y"]
-        level = font_map.get(size)
-        page = span["page"]
-        is_bold = span["bold"]
+    def extract_outline(self, pdf_path):
+        blocks = self.extract_text_blocks(pdf_path)
+        if not blocks:
+            return {"title": "Empty", "outline": []}
+        title = self.detect_title(blocks)
+        median_font = np.median([b["font_size"] for b in blocks])
+        headings = []
+        seen = set()
+        for b in blocks:
+            text = b["text"].strip()
+            if text in seen: continue
+            if self.is_heading_candidate(b, median_font):
+                level = self.classify_level(text)
+                if not level:
+                    fs = b["font_size"]
+                    p75, p85, p95 = np.percentile([x["font_size"] for x in blocks], [75, 85, 95])
+                    if fs >= p95: level = "H1"
+                    elif fs >= p85: level = "H2"
+                    elif fs >= p75: level = "H3"
+                if level:
+                    headings.append({
+                        "level": level,
+                        "text": text,
+                        "page": b["page"]
+                    })
+                    seen.add(text)
+        return {"title": title, "outline": headings}
 
-        # Heuristics to skip false positives
-        if len(text) < 3:
-            continue
-        if text_count[text] > 2:
-            continue  # likely a header/footer
-        if y < 50 or y > 750:
-            continue  # skip top/bottom of page
-        if any(x in text.lower() for x in ["page", "copyright", "generated", "date"]):
-            continue
-        if not is_bold and level != "Title":
-            continue
+def process():
+    input_dir = Path("/app/input")
+    output_dir = Path("/app/output")
+    output_dir.mkdir(exist_ok=True)
+    extractor = PDFOutlineExtractor()
+    for pdf_file in input_dir.glob("*.pdf"):
+        try:
+            result = extractor.extract_outline(str(pdf_file))
+        except Exception:
+            result = {"title": "Error", "outline": []}
+        with open(output_dir / f"{pdf_file.stem}.json", "w", encoding="utf-8") as f:
+            json.dump(result, f, indent=2, ensure_ascii=False)
 
-        if level == "Title" and not title:
-            title = text
-        elif level in {"H1", "H2", "H3"}:
-            outline.append({
-                "level": level,
-                "text": text,
-                "page": page
-            })
-
-    return {
-        "title": title,
-        "outline": outline
-    }
+if __name__ == "__main__":
+    process()
