@@ -5,6 +5,7 @@ from pathlib import Path
 import joblib
 import fitz  # PyMuPDF
 from typing import List, Dict, Optional
+from difflib import SequenceMatcher
 
 class HybridPDFOutlineExtractor:
     def __init__(self, model_path: str = "models/heading_classifier.joblib"):
@@ -30,56 +31,188 @@ class HybridPDFOutlineExtractor:
             except Exception as e:
                 print(f"⚠️ Could not load ML model: {e}")
                 print("Falling back to heuristic-only mode")
-    
+
+    def clean_text(self, text: str) -> str:
+        """Clean and normalize text to fix extraction issues"""
+        if not text:
+            return ""
+        
+        # Fix common OCR/extraction errors
+        text = re.sub(r'\s+', ' ', text)  # Multiple spaces to single
+        text = re.sub(r'([a-z])([A-Z])', r'\1 \2', text)  # Add space between camelCase
+        text = re.sub(r'([a-zA-Z])(\d)', r'\1 \2', text)  # Space between letter and number
+        text = re.sub(r'(\d)([a-zA-Z])', r'\1 \2', text)  # Space between number and letter
+        
+        # Remove repeated characters that might be OCR errors
+        text = re.sub(r'(.)\1{3,}', r'\1', text)  # Remove 4+ repeated chars
+        
+        # Fix common word fragments
+        replacements = {
+            r'\bquest\s*f\b': 'quest for',
+            r'\bPr\s*r\b': 'Pr',
+            r'\boposal\b': 'oposal',
+            r'\bY\s*ou\s*T\s*HERE\b': 'You THERE',
+        }
+        
+        for pattern, replacement in replacements.items():
+            text = re.sub(pattern, replacement, text, flags=re.IGNORECASE)
+        
+        return text.strip()
+
+    def is_corrupted_text(self, text: str) -> bool:
+        """Detect if text appears to be corrupted/fragmented"""
+        if not text or len(text) < 3:
+            return True
+            
+        # Check for excessive fragmentation
+        fragments = len(re.findall(r'\b\w{1,2}\b', text))  # Single/double letter words
+        total_words = len(text.split())
+        
+        if total_words > 0 and fragments / total_words > 0.4:  # More than 40% fragments
+            return True
+        
+        # Check for repeated patterns (like "RFP: R RFP:")
+        words = text.split()
+        if len(words) > 2:
+            for i in range(len(words) - 1):
+                if words[i] == words[i + 1] and len(words[i]) > 1:
+                    return True
+        
+        # Check for excessive repeated characters
+        if re.search(r'(.)\1{4,}', text):  # 5+ repeated chars
+            return True
+            
+        return False
+
+    def normalize_heading_text(self, text: str) -> str:
+        """Normalize heading text for comparison"""
+        text = self.clean_text(text)
+        text = re.sub(r'^\d+\.?\s*', '', text)  # Remove numbering
+        text = re.sub(r'^(chapter|section|part)\s+\d+\.?\s*', '', text, flags=re.IGNORECASE)
+        text = re.sub(r'\s+', ' ', text).strip().lower()
+        return text
+
+    def similarity(self, a: str, b: str) -> float:
+        """Calculate similarity between two strings"""
+        a_norm = self.normalize_heading_text(a)
+        b_norm = self.normalize_heading_text(b)
+        return SequenceMatcher(None, a_norm, b_norm).ratio()
+
+    def is_duplicate_or_similar(self, new_heading: str, existing_headings: List[str], threshold: float = 0.8) -> bool:
+        """Enhanced duplicate detection"""
+        if not new_heading or not existing_headings:
+            return False
+            
+        new_norm = self.normalize_heading_text(new_heading)
+        
+        # Skip very short normalized text
+        if len(new_norm) < 3:
+            return True
+        
+        for existing in existing_headings:
+            existing_norm = self.normalize_heading_text(existing)
+            
+            # Skip if existing is also very short
+            if len(existing_norm) < 3:
+                continue
+                
+            similarity_score = self.similarity(new_heading, existing)
+            
+            # Check for substring relationships
+            if len(new_norm) > 0 and len(existing_norm) > 0:
+                # One contains the other and they're reasonably similar in length
+                if (new_norm in existing_norm and len(new_norm) > len(existing_norm) * 0.7) or \
+                   (existing_norm in new_norm and len(existing_norm) > len(new_norm) * 0.7):
+                    similarity_score = max(similarity_score, 0.85)
+            
+            if similarity_score >= threshold:
+                return True
+        
+        return False
+
     def extract_text_blocks(self, pdf_path: str) -> List[Dict]:
-        """Extract text blocks with comprehensive features"""
+        """Extract and clean text blocks"""
         doc = fitz.open(pdf_path)
         all_blocks = []
         
         for page_num in range(len(doc)):
-            for block in doc[page_num].get_text("dict")["blocks"]:
+            page = doc[page_num]
+            text_blocks = page.get_text("dict")["blocks"]
+            
+            for block in text_blocks:
                 if "lines" not in block:
                     continue
                     
                 for line in block["lines"]:
-                    line_text = ""
-                    line_features = {
-                        "font_sizes": [],
-                        "bold_flags": [],
-                        "y_positions": [],
-                        "x_start": float('inf'),
-                        "x_end": 0
-                    }
+                    if not line.get("spans"):
+                        continue
                     
+                    # Collect spans and sort by x position
+                    line_spans = []
                     for span in line["spans"]:
                         text = span["text"].strip()
                         if text:
-                            line_text += text + " "
-                            line_features["font_sizes"].append(span["size"])
-                            line_features["bold_flags"].append(bool(span["flags"] & 2**4))
-                            line_features["y_positions"].append(span["bbox"][1])
-                            line_features["x_start"] = min(line_features["x_start"], span["bbox"][0])
-                            line_features["x_end"] = max(line_features["x_end"], span["bbox"][2])
+                            line_spans.append({
+                                "text": text,
+                                "font_size": span["size"],
+                                "bold": bool(span["flags"] & 2**4),
+                                "bbox": span["bbox"],
+                                "x_pos": span["bbox"][0]
+                            })
                     
-                    if line_text.strip() and len(line_text.strip()) >= 3:
-                        all_blocks.append({
-                            "text": line_text.strip(),
-                            "page": page_num + 1,
-                            "font_size": max(line_features["font_sizes"]) if line_features["font_sizes"] else 12,
-                            "bold": any(line_features["bold_flags"]),
-                            "y_pos": min(line_features["y_positions"]) if line_features["y_positions"] else 0,
-                            "x_start": line_features["x_start"] if line_features["x_start"] != float('inf') else 0,
-                            "width": line_features["x_end"] - line_features["x_start"] if line_features["x_start"] != float('inf') else 0
-                        })
+                    if not line_spans:
+                        continue
+                    
+                    # Sort spans by x position for proper reading order
+                    line_spans.sort(key=lambda x: x["x_pos"])
+                    
+                    # Reconstruct text with proper spacing
+                    line_text = ""
+                    for i, span in enumerate(line_spans):
+                        if i > 0:
+                            # Add space if there's a gap between spans
+                            prev_span = line_spans[i-1]
+                            gap = span["x_pos"] - (prev_span["bbox"][2])
+                            if gap > 3:  # Significant gap
+                                line_text += " "
+                        line_text += span["text"]
+                    
+                    # Clean the text
+                    line_text = self.clean_text(line_text)
+                    
+                    # Skip corrupted or very short text
+                    if len(line_text) < 3 or self.is_corrupted_text(line_text):
+                        continue
+                    
+                    # Get formatting info
+                    font_sizes = [span["font_size"] for span in line_spans]
+                    bold_flags = [span["bold"] for span in line_spans]
+                    
+                    # Use largest font and any bold
+                    dominant_font_size = max(font_sizes)
+                    is_bold = any(bold_flags)
+                    
+                    # Bounding box
+                    x_coords = [span["bbox"][0] for span in line_spans] + [span["bbox"][2] for span in line_spans]
+                    y_coords = [span["bbox"][1] for span in line_spans] + [span["bbox"][3] for span in line_spans]
+                    
+                    all_blocks.append({
+                        "text": line_text,
+                        "page": page_num + 1,
+                        "font_size": dominant_font_size,
+                        "bold": is_bold,
+                        "y_pos": min(y_coords),
+                        "x_start": min(x_coords),
+                        "width": max(x_coords) - min(x_coords)
+                    })
         
         doc.close()
         return all_blocks
-    
+
     def extract_text_features(self, text: str) -> Dict:
-        """Extract text-based features (same as training)"""
+        """Extract text-based features for ML model"""
         features = {}
         
-        # Basic text features
         words = text.split()
         features['text_length'] = len(text)
         features['word_count'] = len(words)
@@ -130,9 +263,37 @@ class HybridPDFOutlineExtractor:
         features['special_char_ratio'] = len(re.findall(r'[^\w\s]', text)) / len(text) if text else 0
         
         return features
-    
-    def heuristic_classification(self, block: Dict, median_font: float) -> Dict:
-        """Enhanced heuristic classification"""
+
+    def is_likely_non_heading(self, text: str) -> bool:
+        """Identify text that's unlikely to be a heading"""
+        text_lower = text.lower().strip()
+        
+        # Common non-heading patterns
+        non_heading_patterns = [
+            r'^(page|fig|figure|table)\s+\d+',
+            r'^\d+$',  # Just a number
+            r'^www\.',  # URLs
+            r'^http',   # URLs
+            r'@\w+\.',  # Email addresses
+            r'^\(\d+\)',  # Phone numbers
+            r'^\d{3}[-.\s]?\d{3}[-.\s]?\d{4}',  # Phone numbers
+            r'^[-=_]{3,}$',  # Separator lines
+            r'^\s*[-•·]\s*$',  # Bullet points
+        ]
+        
+        for pattern in non_heading_patterns:
+            if re.match(pattern, text_lower):
+                return True
+        
+        # Too many special characters
+        special_chars = len(re.findall(r'[^\w\s]', text))
+        if len(text) > 0 and special_chars / len(text) > 0.5:
+            return True
+            
+        return False
+
+    def heuristic_classification(self, block: Dict, median_font: float, all_blocks: List[Dict]) -> Dict:
+        """Enhanced heuristic classification with context"""
         text = block["text"]
         font_size = block["font_size"]
         bold = block.get("bold", False)
@@ -144,89 +305,95 @@ class HybridPDFOutlineExtractor:
             "reasons": []
         }
         
-        # Font size check
+        # Quick exclusions
+        if self.is_likely_non_heading(text):
+            return result
+        
+        # Font size check - stricter threshold
         font_ratio = font_size / median_font
-        if font_ratio < 1.02:  # Very lenient threshold
+        if font_ratio < 1.1:  # Must be at least 10% larger
             return result
         
         confidence = 0.0
         reasons = []
         
-        # Strong numbering patterns
-        if re.match(r'^\d+\.\d+\.\d+\.?\s', text):  # 1.1.1
+        # Strong numbering patterns (highest priority)
+        if re.match(r'^\d+\.\d+\.\d+\.?\s+\w', text):  # 1.1.1 Something
             result["level"] = "H3"
-            confidence += 0.9
+            confidence += 0.95
             reasons.append("numbered_h3")
-        elif re.match(r'^\d+\.\d+\.?\s', text):  # 1.1
+        elif re.match(r'^\d+\.\d+\.?\s+\w', text):  # 1.1 Something
             result["level"] = "H2"
-            confidence += 0.9
+            confidence += 0.95
             reasons.append("numbered_h2")
-        elif re.match(r'^\d+\.?\s', text):  # 1.
+        elif re.match(r'^\d+\.?\s+\w', text):  # 1. Something
             result["level"] = "H1"
-            confidence += 0.9
+            confidence += 0.95
             reasons.append("numbered_h1")
         
-        # Common heading patterns
+        # Strong heading keywords (case-insensitive)
         if not result["level"]:
-            heading_indicators = [
-                (r'^(table of contents|contents)$', 'H1', 0.8),
-                (r'^(introduction|conclusion|summary|overview)$', 'H1', 0.7),
-                (r'^(chapter|section)\s+\d+', 'H1', 0.8),
-                (r'^(background|methodology|results|discussion)$', 'H1', 0.6),
-                (r'^(abstract|references|appendix|bibliography)$', 'H1', 0.7),
-                (r'^revision\s+history$', 'H1', 0.8),
+            strong_patterns = [
+                (r'^(introduction|conclusion|summary|overview|abstract)$', 'H1', 0.9),
+                (r'^(table\s+of\s+contents|contents)$', 'H1', 0.9),
+                (r'^(chapter|section)\s+\d+', 'H1', 0.85),
+                (r'^(background|methodology|results|discussion|analysis)$', 'H1', 0.8),
+                (r'^(references|appendix|bibliography|acknowledgments)$', 'H1', 0.8),
             ]
             
-            text_lower = text.lower().strip()
-            for pattern, level, conf in heading_indicators:
-                if re.match(pattern, text_lower):
+            text_clean = re.sub(r'[^\w\s]', '', text.lower().strip())
+            for pattern, level, conf in strong_patterns:
+                if re.match(pattern, text_clean):
                     result["level"] = level
                     confidence += conf
-                    reasons.append(f"pattern_{pattern}")
+                    reasons.append(f"strong_pattern")
                     break
         
-        # Font-based classification
+        # Font-based classification (more conservative)
         if not result["level"]:
-            if font_ratio >= 1.5:
+            if font_ratio >= 1.5 and bold:
                 result["level"] = "H1"
-                confidence += 0.6
-                reasons.append("very_large_font")
+                confidence += 0.7
+                reasons.append("very_large_bold_font")
             elif font_ratio >= 1.3:
-                result["level"] = "H1"
-                confidence += 0.5
+                result["level"] = "H1" if bold else "H2"
+                confidence += 0.6
                 reasons.append("large_font")
-            elif font_ratio >= 1.2:
+            elif font_ratio >= 1.2 and bold:
                 result["level"] = "H2"
-                confidence += 0.4
-                reasons.append("medium_font")
-            elif font_ratio >= 1.1:
-                result["level"] = "H3"
-                confidence += 0.3
-                reasons.append("small_font")
+                confidence += 0.5
+                reasons.append("medium_bold_font")
         
-        # Additional confidence boosters
-        if bold:
-            confidence += 0.2
-            reasons.append("bold")
+        # Additional checks for confidence
+        if result["level"]:
+            # Bold text bonus
+            if bold:
+                confidence += 0.1
+                reasons.append("bold")
+            
+            # ALL CAPS bonus (but not too much)
+            if text.isupper() and 5 <= len(text) <= 50:
+                confidence += 0.15
+                reasons.append("all_caps")
+            
+            # Title case bonus
+            if text.istitle() and len(text.split()) <= 8:
+                confidence += 0.1
+                reasons.append("title_case")
+            
+            # Length penalties/bonuses
+            if len(text) > 150:
+                confidence -= 0.3
+                reasons.append("too_long")
+            elif 5 <= len(text) <= 80:
+                confidence += 0.05
+                reasons.append("good_length")
+            elif len(text) < 5:
+                confidence -= 0.2
+                reasons.append("too_short")
         
-        if text.isupper() and len(text) > 5:
-            confidence += 0.2
-            reasons.append("all_caps")
-        
-        if re.match(r'^[A-Z][a-z]+(?:\s+[A-Z][a-z]+)*$', text):
-            confidence += 0.15
-            reasons.append("title_case")
-        
-        # Length penalty for very long text
-        if len(text) > 200:
-            confidence -= 0.4
-            reasons.append("too_long")
-        elif 10 <= len(text) <= 80:
-            confidence += 0.1
-            reasons.append("good_length")
-        
-        # Final decision
-        if result["level"] and confidence > 0.2:
+        # Final decision - higher threshold
+        if result["level"] and confidence > 0.4:
             result["is_heading"] = True
             result["confidence"] = min(confidence, 1.0)
             result["reasons"] = reasons
@@ -239,7 +406,6 @@ class HybridPDFOutlineExtractor:
             return {"is_heading": False, "level": None, "confidence": 0.0, "reasons": ["no_ml_model"]}
         
         try:
-            # Extract features (same as training)
             text_features = self.extract_text_features(block["text"])
             
             feature_vector = {
@@ -256,18 +422,14 @@ class HybridPDFOutlineExtractor:
                 **{k: (int(v) if isinstance(v, bool) else float(v)) for k, v in text_features.items()}
             }
             
-            # Ensure all required features are present and in correct order
             feature_array = np.array([[feature_vector.get(feat, 0) for feat in self.feature_names]])
             feature_array = np.nan_to_num(feature_array, nan=0.0)
             
-            # Scale features
             feature_array_scaled = self.scaler.transform(feature_array)
             
-            # Predict
             prediction = self.ml_model.predict(feature_array_scaled)[0]
             probabilities = self.ml_model.predict_proba(feature_array_scaled)[0]
             
-            # Get confidence
             class_idx = list(self.ml_model.classes_).index(prediction)
             confidence = probabilities[class_idx]
             
@@ -275,8 +437,7 @@ class HybridPDFOutlineExtractor:
                 "is_heading": prediction != "non-heading",
                 "level": prediction if prediction != "non-heading" else None,
                 "confidence": float(confidence),
-                "reasons": ["ml_prediction"],
-                "all_probabilities": dict(zip(self.ml_model.classes_, probabilities))
+                "reasons": ["ml_prediction"]
             }
             
         except Exception as e:
@@ -284,66 +445,99 @@ class HybridPDFOutlineExtractor:
             return {"is_heading": False, "level": None, "confidence": 0.0, "reasons": ["ml_error"]}
     
     def detect_title(self, blocks: List[Dict]) -> str:
-        """Detect document title"""
-        first_page = [b for b in blocks if b["page"] == 1]
-        if not first_page:
-            return "Untitled Document"
+        """Improved title detection"""
+        if not blocks:
+            return ""
         
-        # Look for largest font on first page
-        max_size = max(b["font_size"] for b in first_page)
-        title_candidates = [b for b in first_page if b["font_size"] >= max_size * 0.95]
+        first_page_blocks = [b for b in blocks if b["page"] == 1]
+        if not first_page_blocks:
+            return ""
         
-        for b in title_candidates:
-            if 5 < len(b["text"]) < 200 and not re.match(r'^\d+\.', b["text"]):
-                return b["text"]
+        # Sort by y position (top to bottom)
+        first_page_blocks.sort(key=lambda x: x["y_pos"])
         
-        return "Untitled Document"
+        # Look for title in first few blocks with larger fonts
+        median_font = np.median([b["font_size"] for b in first_page_blocks])
+        
+        title_candidates = []
+        for block in first_page_blocks[:10]:  # Check first 10 blocks
+            text = block["text"].strip()
+            font_ratio = block["font_size"] / median_font
+            
+            # Good title criteria
+            if (5 <= len(text) <= 200 and  # Reasonable length
+                font_ratio >= 1.1 and  # Larger font
+                not self.is_likely_non_heading(text) and  # Not obvious non-heading
+                not self.is_corrupted_text(text) and  # Not corrupted
+                not re.match(r'^\d+\.', text)):  # Not numbered
+                
+                title_candidates.append({
+                    "text": text,
+                    "font_ratio": font_ratio,
+                    "y_pos": block["y_pos"],
+                    "bold": block.get("bold", False)
+                })
+        
+        if not title_candidates:
+            return ""
+        
+        # Sort by font size (descending) then by position (ascending)
+        title_candidates.sort(key=lambda x: (-x["font_ratio"], x["y_pos"]))
+        
+        return title_candidates[0]["text"]
     
     def extract_outline(self, pdf_path: str) -> Dict:
         """Main extraction method"""
         try:
             blocks = self.extract_text_blocks(pdf_path)
             if not blocks:
-                return {"title": "Empty Document", "outline": []}
+                return {"title": "", "outline": []}
             
             # Detect title
             title = self.detect_title(blocks)
             
-            # Calculate median font size
+            # Calculate median font size for the document
             median_font = np.median([b["font_size"] for b in blocks])
             
             # Classify each block
             headings = []
-            seen_texts = set()
+            seen_heading_texts = []
             
             for block in blocks:
                 text = block["text"].strip()
                 
-                # Skip duplicates and very short texts
-                if text in seen_texts or len(text) < 3:
+                # Skip very short texts or corrupted text
+                if len(text) < 3 or self.is_corrupted_text(text):
+                    continue
+                
+                # Skip if it's the title (avoid duplication)
+                if title and self.similarity(text, title) > 0.9:
+                    continue
+                
+                # Check for duplicates
+                if self.is_duplicate_or_similar(text, seen_heading_texts):
                     continue
                 
                 # Get classifications
-                heuristic_result = self.heuristic_classification(block, median_font)
+                heuristic_result = self.heuristic_classification(block, median_font, blocks)
                 ml_result = self.ml_classification(block, median_font)
                 
-                # Decision logic: combine both approaches
+                # Combine classifications
                 final_decision = self.combine_classifications(heuristic_result, ml_result)
                 
-                if final_decision["is_heading"]:
+                if final_decision["is_heading"] and final_decision["confidence"] > 0.5:  # Higher threshold
                     headings.append({
                         "level": final_decision["level"],
                         "text": text,
                         "page": block["page"],
-                        "confidence": final_decision["confidence"],
-                        "method": final_decision.get("method", "unknown")
+                        "y_pos": block.get("y_pos", 0)
                     })
-                    seen_texts.add(text)
+                    seen_heading_texts.append(text)
             
             # Sort headings by page and position
             headings.sort(key=lambda x: (x["page"], x.get("y_pos", 0)))
             
-            # Remove confidence and method from final output (keeping it clean for submission)
+            # Clean output
             clean_headings = [
                 {
                     "level": h["level"],
@@ -357,7 +551,7 @@ class HybridPDFOutlineExtractor:
             
         except Exception as e:
             print(f"Error extracting outline from {pdf_path}: {e}")
-            return {"title": "Error", "outline": []}
+            return {"title": "", "outline": []}
     
     def combine_classifications(self, heuristic_result: Dict, ml_result: Dict) -> Dict:
         """Combine heuristic and ML classifications"""
@@ -366,7 +560,7 @@ class HybridPDFOutlineExtractor:
         if self.ml_model is None:
             return {**heuristic_result, "method": "heuristic_only"}
         
-        # Both say it's not a heading
+        # Both say not a heading
         if not heuristic_result["is_heading"] and not ml_result["is_heading"]:
             return {
                 "is_heading": False,
@@ -377,7 +571,7 @@ class HybridPDFOutlineExtractor:
         
         # Both agree it's a heading
         if heuristic_result["is_heading"] and ml_result["is_heading"]:
-            # Use the one with higher confidence, but prefer heuristic for numbered patterns
+            # Prefer heuristic for numbered patterns
             if any("numbered" in reason for reason in heuristic_result.get("reasons", [])):
                 return {**heuristic_result, "method": "heuristic_numbered"}
             elif ml_result["confidence"] > heuristic_result["confidence"]:
@@ -385,17 +579,17 @@ class HybridPDFOutlineExtractor:
             else:
                 return {**heuristic_result, "method": "heuristic_higher_conf"}
         
-        # Disagreement: use confidence-based decision with weights
-        heuristic_weighted = heuristic_result["confidence"] * 0.4
-        ml_weighted = ml_result["confidence"] * 0.6
+        # Disagreement - use weighted confidence
+        heuristic_weighted = heuristic_result["confidence"] * 0.6  # Favor heuristic slightly
+        ml_weighted = ml_result["confidence"] * 0.4
         
-        # Special boost for strong heuristic patterns
+        # Strong boost for numbered patterns
         if any("numbered" in reason for reason in heuristic_result.get("reasons", [])):
-            heuristic_weighted *= 1.5
+            heuristic_weighted *= 1.8
         
         if heuristic_weighted > ml_weighted and heuristic_result["is_heading"]:
             return {**heuristic_result, "method": "heuristic_wins"}
-        elif ml_result["is_heading"]:
+        elif ml_result["is_heading"] and ml_result["confidence"] > 0.7:  # High ML confidence
             return {**ml_result, "method": "ml_wins"}
         else:
             return {
@@ -406,7 +600,7 @@ class HybridPDFOutlineExtractor:
             }
 
 
-# Main processing function (same interface as your original)
+# Main processing function
 def process():
     """Process all PDFs in input directory"""
     from pathlib import Path
@@ -430,8 +624,7 @@ def process():
             
         except Exception as e:
             print(f"❌ Error processing {pdf_file.name}: {e}")
-            # Create error output
-            error_result = {"title": "Error", "outline": []}
+            error_result = {"title": "", "outline": []}
             output_file = output_dir / f"{pdf_file.stem}.json"
             with open(output_file, "w", encoding="utf-8") as f:
                 json.dump(error_result, f, indent=2, ensure_ascii=False)
