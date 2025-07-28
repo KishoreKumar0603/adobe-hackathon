@@ -13,3 +13,7 @@ COPY outline_extractor.py .
 RUN mkdir -p /app/input /app/output
 
 CMD ["python", "outline_extractor.py"]
+
+
+
+
